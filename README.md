@@ -15,17 +15,15 @@
 ---
 
 <p align="center">
-  <img height="160" alt="GitHub stats"
-       src="https://github-readme-stats.vercel.app/api?username=ariiannemay&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400"
-       onerror="this.onerror=null;this.src='https://github-readme-stats-sigma-five.vercel.app/api?username=ariiannemay&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400';" />
-  <img height="160" alt="Top languages"
-       src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400"
-       onerror="this.onerror=null;this.src='https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400';" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ariiannemay&theme=flat&no-frame=true&no-bg=true&margin-w=10&margin-h=10" alt="Trophies" />
 </p>
-
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ariiannemay&bg_color=0d1117&color=ffffff&line=ff69b4&point=ffb6c1&area=true&hide_border=true" alt="Activity graph" />
 </p>
 
 ---
