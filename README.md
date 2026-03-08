@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I’m Arianne 🌸</h1>
 <p align="center">
-  just vibe coding my ideas into reality (usually bots and study trackers) ✨
+  just vibe coding my ideas into bots and study trackers ✨
 </p>
 
 <p align="center">
