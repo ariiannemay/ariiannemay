@@ -15,9 +15,14 @@
 ---
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=ariiannemay&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="Top languages" />
+  <img height="160" alt="GitHub stats"
+       src="https://github-readme-stats.vercel.app/api?username=ariiannemay&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400"
+       onerror="this.onerror=null;this.src='https://github-readme-stats-sigma-five.vercel.app/api?username=ariiannemay&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400';" />
+  <img height="160" alt="Top languages"
+       src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400"
+       onerror="this.onerror=null;this.src='https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400';" />
 </p>
+
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=tokyonight&hide_border=true" alt="GitHub streak" />
