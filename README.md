@@ -3,6 +3,15 @@
   just vibe coding my ideas into reality (usually bots and study trackers) ✨
 </p>
 
+<p align="center">
+  <a href="mailto:ariannemay737@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-ariannemay737%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://x.com/ariiannemay">
+    <img src="https://img.shields.io/badge/X-@ariiannemay-000000?style=for-the-badge&logo=x&logoColor=white" />
+  </a>
+</p>
+
 ---
 
 <p align="center">
@@ -11,13 +20,6 @@
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=default&hide_border=true&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4" />
-</p>
-
----
-
-<p align="center">
-  <a href="https://x.com/ariiannemay">GitHub</a> •
-  <a href="mailto:ariannemay737@gmail.com">Email</a>
 </p>
 
 ---
