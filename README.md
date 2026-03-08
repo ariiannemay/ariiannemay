@@ -8,11 +8,11 @@
 ---
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ariiannemay&bg_color=0d1117&color=ffffff&line=ff69b4&point=ffb6c1&area=true&hide_border=true" alt="Activity graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ariiannemay&bg_color=0d1117&color=ffffff&line=ff69b4&point=ffb6c1&area=true&hide_border=true&count_private=true" alt="Activity graph" />
 </p>
 
 ---
