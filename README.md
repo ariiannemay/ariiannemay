@@ -15,9 +15,8 @@
 
 ---
 
-### 🫶 Let’s Connect
 <p align="center">
-  <a href="https://github.com/ariiannemay">GitHub</a> •
+  <a href="https://x.com/ariiannemay">GitHub</a> •
   <a href="mailto:ariannemay737@gmail.com">Email</a>
 </p>
 
