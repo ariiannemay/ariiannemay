@@ -3,16 +3,39 @@
   just vibe coding my ideas into bots and study trackers ✨
 </p>
 
-<p align="center"><a href="https://discord.gg/studywithme"><img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/swm%20full%20logo%20with%20name.png" width="25" height="25" />&nbsp;<img src="https://img.shields.io/badge/STUDY%20WITH%20ME-007bff?style=for-the-badge&logo=discord&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;<a href="https://discord.com/oauth2/authorize?client_id=1387792853236842576"><img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/ForestSessionApp%20Icon.png" width="25" height="25" />&nbsp;<img src="https://img.shields.io/badge/PLANT%20WITH%20ME-2ecc71?style=for-the-badge&logo=discord&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;<a href="https://2026bar-reviewtracker.vercel.app/"><img src="https://2026bar-reviewtracker.vercel.app/Assets/Images/LAWLOGO.png" width="25" height="25" />&nbsp;<img src="https://img.shields.io/badge/2026%20BAR%20TRACKER-6f42c1?style=for-the-badge" /></a>&nbsp;&nbsp;&nbsp;<a href="https://studytrackerandplanner.vercel.app/"><img src="https://raw.githubusercontent.com/ariiannemay/STP-Assets/main/Images/studyplannerandtracker-logo.png" width="25" height="25" />&nbsp;<img src="https://img.shields.io/badge/STUDY%20PLANNER%20(WIP)-ff69b4?style=for-the-badge" /></a></p>
+<p align="center">
+  <a href="https://discord.gg/studywithme">
+    <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/swm%20full%20logo%20with%20name.png" width="25" height="25" alt="SWM" />&nbsp;
+    <img src="https://img.shields.io/badge/STUDY%20WITH%20ME-007bff?style=for-the-badge&logo=discord&logoColor=white" alt="Study With Me" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://discord.com/oauth2/authorize?client_id=1387792853236842576">
+    <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/ForestSessionApp%20Icon.png" width="25" height="25" alt="PWM" />&nbsp;
+    <img src="https://img.shields.io/badge/PLANT%20WITH%20ME-2ecc71?style=for-the-badge&logo=discord&logoColor=white" alt="Plant With Me" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://2026bar-reviewtracker.vercel.app/">
+    <img src="https://2026bar-reviewtracker.vercel.app/Assets/Images/LAWLOGO.png" width="25" height="25" alt="2026 Bar Tracker" />&nbsp;
+    <img src="https://img.shields.io/badge/2026%20BAR%20TRACKER-6f42c1?style=for-the-badge" alt="2026 Bar Tracker" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://studytrackerandplanner.vercel.app/">
+    <img src="https://raw.githubusercontent.com/ariiannemay/STP-Assets/main/Images/studyplannerandtracker-logo.png" width="25" height="25" alt="Study Planner" />&nbsp;
+    <img src="https://img.shields.io/badge/STUDY%20PLANNER%20(WIP)-ff69b4?style=for-the-badge" alt="Study Planner WIP" />
+  </a>
+</p>
 
 ---
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ariiannemay&bg_color=0d1117&color=ffffff&line=ff69b4&point=ffb6c1&area=true&hide_border=true&count_private=true" alt="Activity graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ariiannemay/ariiannemay/output/github-contribution-grid-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/output/github-contribution-grid-snake.svg" alt="Contribution Snake" />
+  </picture>
 </p>
 
 ---
@@ -28,5 +51,10 @@
 </p>
 
 <p align="center">
-  <a href="mailto:ariannemay737@gmail.com"><img src="https://img.shields.io/badge/-Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a> <a href="https://x.com/ariiannemay"><img src="https://img.shields.io/badge/-X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="mailto:ariannemay737@gmail.com">
+    <img src="https://img.shields.io/badge/-Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://x.com/ariiannemay">
+    <img src="https://img.shields.io/badge/-X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
 </p>
