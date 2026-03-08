@@ -3,38 +3,24 @@
   just vibe coding my ideas into bots and study trackers ✨
 </p>
 
-<div align="center">
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://discord.gg/studywithme">
-        <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/swm%20full%20logo%20with%20name.png" width="30" height="30" /><br>
-        <img src="https://img.shields.io/badge/Study%20With%20Me-007bff?style=for-the-badge&logo=discord&logoColor=white" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://discord.com/oauth2/authorize?client_id=1387792853236842576">
-        <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/ForestSessionApp%20Icon.png" width="30" height="30" /><br>
-        <img src="https://img.shields.io/badge/Plant%20With%20Me-2ecc71?style=for-the-badge&logo=discord&logoColor=white" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://2026bar-reviewtracker.vercel.app/">
-        <img src="https://2026bar-reviewtracker.vercel.app/Assets/Images/LAWLOGO.png" width="30" height="30" /><br>
-        <img src="https://img.shields.io/badge/Bar%20Review%20Tracker-6f42c1?style=for-the-badge" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://studytrackerandplanner.vercel.app/">
-        <img src="https://raw.githubusercontent.com/ariiannemay/STP-Assets/main/Images/studyplannerandtracker-logo.png" width="30" height="30" /><br>
-        <img src="https://img.shields.io/badge/Study%20Planner%20(WIP)-ff69b4?style=for-the-badge" />
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
+<p align="center">
+  <a href="https://discord.gg/studywithme">
+    <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/swm%20full%20logo%20with%20name.png" width="25" height="25" />
+    <img src="https://img.shields.io/badge/Study%20With%20Me-007bff?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://discord.com/oauth2/authorize?client_id=1387792853236842576">
+    <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/ForestSessionApp%20Icon.png" width="25" height="25" />
+    <img src="https://img.shields.io/badge/Plant%20With%20Me-2ecc71?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://2026bar-reviewtracker.vercel.app/">
+    <img src="https://2026bar-reviewtracker.vercel.app/Assets/Images/LAWLOGO.png" width="25" height="25" />
+    <img src="https://img.shields.io/badge/Bar%20Tracker-6f42c1?style=for-the-badge" />
+  </a>
+  <a href="https://studytrackerandplanner.vercel.app/">
+    <img src="https://raw.githubusercontent.com/ariiannemay/STP-Assets/main/Images/studyplannerandtracker-logo.png" width="25" height="25" />
+    <img src="https://img.shields.io/badge/Study%20Planner-ff69b4?style=for-the-badge" />
+  </a>
+</p>
 
 ---
 
