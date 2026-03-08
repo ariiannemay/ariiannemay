@@ -4,6 +4,9 @@
 </p>
 
 <p align="center">
+  <a href="https://discord.gg/studywithme">
+    <img src="https://img.shields.io/badge/Discord-Study%20With%20Me-ff69b4?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  </a>
   <a href="mailto:ariannemay737@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-ariannemay737%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
