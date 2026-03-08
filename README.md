@@ -8,6 +8,7 @@
     <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/swm%20full%20logo%20with%20name.png" width="25" height="25" />
     <img src="https://img.shields.io/badge/Study%20With%20Me-007bff?style=for-the-badge&logo=discord&logoColor=white" alt="Study With Me" />
   </a>
+  <br>
   <a href="https://discord.com/oauth2/authorize?client_id=1387792853236842576">
     <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/ForestSessionApp%20Icon.png" width="25" height="25" />
     <img src="https://img.shields.io/badge/Plant%20With%20Me-2ecc71?style=for-the-badge&logo=discord&logoColor=white" alt="Plant With Me" />
