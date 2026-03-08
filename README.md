@@ -7,8 +7,8 @@
 
 ### 🌸 My GitHub Stats
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=ariiannemay&show_icons=true&theme=transparent&hide_border=true&title_color=ff69b4&icon_color=ff69b4&text_color=444" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&theme=transparent&hide_border=true&title_color=ff69b4&text_color=444" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=ariiannemay&show_icons=true&hide_border=true&title_color=ff69b4&icon_color=ff69b4&text_color=444&bg_color=ffffff" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ariiannemay&layout=compact&hide_border=true&title_color=ff69b4&text_color=444&bg_color=ffffff" />
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=ariiannemay&theme=default&hide_border=true&ring=ff69b4&fire=ff69b4&currStreakNum=ff69b4" />
