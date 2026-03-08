@@ -29,7 +29,7 @@
     <td align="center">
       <a href="https://studytrackerandplanner.vercel.app/">
         <img src="https://raw.githubusercontent.com/ariiannemay/STP-Assets/main/Images/studyplannerandtracker-logo.png" width="30" height="30" /><br>
-        <img src="https://img.shields.io/badge/Study%20Planner-ff69b4?style=for-the-badge" />
+        <img src="https://img.shields.io/badge/Study%20Planner%20(WIP)-ff69b4?style=for-the-badge" />
       </a>
     </td>
   </tr>
