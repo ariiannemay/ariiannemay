@@ -41,7 +41,7 @@
 </p>
 
 <p align="center">
-  <i>“small progress is still progress.”</i> 🌼
+🌼
 </p>
 
 <p align="center">
