@@ -36,8 +36,6 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ariiannemay&label=Profile%20Views&color=ff69b4&style=flat" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/ariiannemay?label=Followers&style=flat&color=ffb6c1" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/ariiannemay?label=Stars&style=flat&color=ffc0cb" alt="Stars" />
 </p>
 
 <p align="center">
