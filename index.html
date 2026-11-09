@@ -23,10 +23,10 @@
   <!-- Browser Favicon / Chrome Tab Logo -->
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/missattycpa%20logo.png" onerror="this.onerror=null;this.href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>'">
   
-  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+<!-- Google Fonts: Plus Jakarta Sans, Playfair Display & Lora -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -203,9 +203,9 @@
       <nav class="hidden lg:flex items-center p-1 rounded-2xl bg-oat-200/80 dark:bg-espresso-800/80 border border-stone-200/60 dark:border-espresso-700/60 text-xs font-semibold tracking-wide">
         <button onclick="switchTab('about')" id="nav-about" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-active">ABOUT</button>
         <button onclick="switchTab('apps')" id="nav-apps" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-inactive">APPS</button>
-        <button onclick="switchTab('portfolio')" id="nav-portfolio" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-inactive">PORTFOLIO</button>
         <button onclick="switchTab('shop')" id="nav-shop" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-inactive">SHOP &amp; LINKS</button>
         <button onclick="switchTab('career')" id="nav-career" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-inactive">CAREER</button>
+        <button onclick="switchTab('portfolio')" id="nav-portfolio" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-inactive">PORTFOLIO</button>
         <button onclick="switchTab('contact')" id="nav-contact" class="tab-btn px-3.5 py-2 rounded-xl transition-all tab-inactive">CONTACT</button>
       </nav>
 
@@ -227,9 +227,9 @@
     <div id="mobile-menu" class="hidden lg:hidden border-b border-stone-200 dark:border-espresso-700 bg-oat-100 dark:bg-espresso-900 px-6 py-4 space-y-1.5 text-sm font-semibold">
       <button onclick="switchTabMobile('about')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">ABOUT</button>
       <button onclick="switchTabMobile('apps')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">APPS</button>
-      <button onclick="switchTabMobile('portfolio')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">PORTFOLIO</button>
       <button onclick="switchTabMobile('shop')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">SHOP &amp; LINKS</button>
       <button onclick="switchTabMobile('career')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">CAREER</button>
+      <button onclick="switchTabMobile('portfolio')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">PORTFOLIO</button>
       <button onclick="switchTabMobile('contact')" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">CONTACT</button>
     </div>
   </header>
@@ -242,73 +242,75 @@
     <!-- ========================================== -->
     <section id="view-about" class="tab-view space-y-7">
       
-      <!-- Hero Card with Sleepy Cat SVG & Botanical Accents -->
-      <div class="relative pt-5">
-        <!-- Cute Sleeping Cat Resting on Top-Right Corner of Hero Card -->
-        <div class="absolute -top-1 right-6 sm:right-10 z-20 pointer-events-none select-none" aria-hidden="true">
-          <svg class="w-20 h-12 text-stone-700 dark:text-stone-300" viewBox="0 0 120 70" fill="none">
-            <!-- Cat body curl -->
-            <path d="M22 58C22 38 42 26 66 26C88 26 102 39 102 58H22Z" fill="currentColor"/>
-            <!-- Cat head -->
-            <circle cx="38" cy="44" r="15" fill="currentColor"/>
-            <!-- Left & Right ears -->
-            <path d="M25 35L28 20L38 30Z" fill="currentColor"/>
-            <path d="M40 30L49 20L51 35Z" fill="currentColor"/>
-            <!-- Inner pink/caramel ears -->
-            <path d="M27.5 33L29.5 23.5L35.5 30Z" class="text-caramel-400" fill="currentColor"/>
-            <path d="M42 30L47.5 23.5L49 33Z" class="text-caramel-400" fill="currentColor"/>
-            <!-- Closed sleepy eyes -->
-            <path d="M31 44C32.5 46 35.5 46 37 44" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M41 44C42.5 46 45.5 46 47 44" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round"/>
-            <!-- Cute tail curled around front -->
-            <path d="M98 56C108 56 112 49 106 45C101 42 93 48 84 55" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
-            <!-- Tiny floating zzz -->
-            <text x="56" y="18" class="fill-caramel-500 dark:fill-caramel-400 font-mono text-[10px] animate-twinkle">z</text>
-            <text x="64" y="12" class="fill-sage-500 dark:fill-sage-400 font-mono text-[12px] animate-twinkle-delay">z</text>
-          </svg>
-        </div>
-
-        <div class="p-6 sm:p-8 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 shadow-xs relative overflow-hidden">
+<!-- Hero Card with Botanical Accents -->
+      <div>
+<div class="p-6 sm:p-8 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 shadow-xs relative">
           <!-- Decorative four-point sparkles -->
-          <svg class="absolute bottom-5 right-6 w-8 h-8 text-caramel-400/50 animate-twinkle pointer-events-none" viewBox="0 0 32 32" fill="currentColor">
+          <svg class="absolute bottom-2.5 right-3 w-7 h-7 text-caramel-400/60 animate-twinkle pointer-events-none z-20" viewBox="0 0 32 32" fill="currentColor">
             <path d="M16 2C16 10 22 16 30 16C22 16 16 22 16 30C16 22 10 16 2 16C10 16 16 10 16 2Z"/>
           </svg>
 
-          <div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-5">
-                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl overflow-hidden bg-oat-200 dark:bg-espresso-700 border-2 border-sage-400/50 shadow-sm shrink-0">
-                  <img 
-                    src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/Arianne%20May%20Amosin%20-%20Creative%20Shot%201x1%20zoomout.jpg" 
-                    alt="Arianne May Amosin" 
-                    class="w-full h-full object-cover" 
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                  />
-                  <div class="w-full h-full hidden items-center justify-center font-serif text-2xl font-bold text-stone-700 dark:text-stone-300">
-                    AM
-                  </div>
-                </div>
-                <div>
-                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-500/10 dark:bg-sage-400/15 border border-sage-500/25 text-sage-600 dark:text-sage-400 text-[11px] font-mono mb-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-sage-500 dark:bg-sage-400 animate-pulse"></span>
-                    <span>currently freestyling my life</span>
-                  </div>
-                  <h1 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 dark:text-oat-50">Arianne May</h1>
-                  <p class="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-0.5 font-mono">@missattycpa • Roxas City, Philippines</p>
+<div class="relative z-10 flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-10">
+            
+<!-- Left Column: Large Profile Pic on Left + Stacked Text on Right -->
+            <div class="flex-1 w-full flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              <div class="w-28 h-28 sm:w-44 sm:h-44 rounded-3xl overflow-hidden bg-oat-200 dark:bg-espresso-700 border-2 border-sage-400/50 shadow-sm shrink-0">
+                <img 
+                  src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/Arianne%20May%20Amosin%20-%20Creative%20Shot%201x1%20zoomout.jpg" 
+                  alt="Arianne May Amosin" 
+                  class="w-full h-full object-cover" 
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="w-full h-full hidden items-center justify-center font-serif text-3xl font-bold text-stone-700 dark:text-stone-300">
+                  AM
                 </div>
               </div>
 
-              <p class="mt-6 text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed max-w-2xl font-light">
-                Welcome to my corner of the internet. This is my personal hub where you can find everything about me—from my favorite apps and creative projects to my career journey, links, and ways to connect.
-              </p>
-            </div>
+              <div class="flex-1 min-w-0">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-500/10 dark:bg-sage-400/15 border border-sage-500/25 text-sage-600 dark:text-sage-400 text-[11px] font-mono mb-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sage-500 dark:bg-sage-400 animate-pulse"></span>
+                  <span>currently freestyling my life</span>
+                </div>
+                <h1 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 dark:text-oat-50">Arianne May</h1>
+                <p class="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-0.5 font-mono">@missattycpa • Roxas City, Philippines</p>
 
-            <!-- Right-Side Stack: Daily Fuel Pill + 2x2 Social Logos Grid -->
-            <div class="flex flex-col gap-3 w-full sm:w-auto sm:min-w-[225px] shrink-0">
-              <!-- Steaming Coffee Pill -->
-              <div class="p-3.5 rounded-2xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 text-xs text-stone-600 dark:text-stone-300 flex items-center gap-3">
-                <div class="p-2 rounded-xl bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 shrink-0">
-                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<p style="font-family: 'Lora', serif;" class="mt-3.5 italic text-[14.5px] sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed text-justify">
+                  Welcome to my corner of the internet. This is my personal hub where you can find everything about me—from my favorite daily apps and creative projects to my career journey, curated links, and ways to connect.
+                </p>
+              </div>
+            </div>
+            
+<!-- Right Column: Status Pill + 2x2 Social Logos -->
+            <div class="w-full lg:w-52 shrink-0 space-y-2.5 pt-10 lg:pt-4">
+              <!-- Coffee Pill with Centered Sleeping Cat -->
+              <div class="relative px-3.5 py-2.5 rounded-2xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 text-xs text-stone-600 dark:text-stone-300 flex items-center gap-2.5">
+                
+                <!-- Centered Sleeping Cat -->
+                <div class="absolute -top-[62px] left-1/2 -translate-x-1/2 z-20 pointer-events-none select-none" aria-hidden="true">
+                  <svg class="w-28 h-20 text-stone-700 dark:text-stone-300" viewBox="0 -14 120 84" fill="none">
+                    <!-- Cat body curl -->
+                    <path d="M22 58C22 38 42 26 66 26C88 26 102 39 102 58H22Z" fill="currentColor"/>
+                    <!-- Cat head -->
+                    <circle cx="38" cy="44" r="15" fill="currentColor"/>
+                    <!-- Left & Right ears -->
+                    <path d="M25 35L28 20L38 30Z" fill="currentColor"/>
+                    <path d="M40 30L49 20L51 35Z" fill="currentColor"/>
+                    <!-- Inner pink/caramel ears -->
+                    <path d="M27.5 33L29.5 23.5L35.5 30Z" class="text-caramel-400" fill="currentColor"/>
+                    <path d="M42 30L47.5 23.5L49 33Z" class="text-caramel-400" fill="currentColor"/>
+                    <!-- Closed sleepy eyes -->
+                    <path d="M31 44C32.5 46 35.5 46 37 44" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M41 44C42.5 46 45.5 46 47 44" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round"/>
+                    <!-- Cute tail curled around front -->
+                    <path d="M98 56C108 56 112 49 106 45C101 42 93 48 84 55" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+                    <!-- Floating zzz -->
+                    <text x="55" y="14" class="fill-caramel-500 dark:fill-caramel-400 font-mono text-[11px] font-bold animate-twinkle">z</text>
+                    <text x="64" y="6" class="fill-sage-500 dark:fill-sage-400 font-mono text-[13px] font-bold animate-twinkle-delay">z</text>
+                    <text x="74" y="-2" class="fill-caramel-500 dark:fill-caramel-400 font-mono text-[15px] font-bold animate-twinkle">z</text>
+                  </svg>
+                </div>
+
+                <div class="p-2 rounded-xl bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 shrink-0">                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
                     <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
                     <path d="M6 2v2" class="animate-steam"/>
@@ -317,65 +319,37 @@
                   </svg>
                 </div>
                 <div>
-                  <span class="block font-semibold text-stone-800 dark:text-oat-50">Daily Fuel</span>
-                  <span class="text-[11px] text-stone-500 dark:text-stone-400">Iced Coffee &amp; Jasmine Tea</span>
+                  <span class="block font-semibold text-stone-800 dark:text-oat-50">CPA &amp; Juris Doctor</span>
+                  <span class="text-[11px] text-stone-500 dark:text-stone-400">Soon to be Atty!</span>
                 </div>
               </div>
-
-              <!-- 2x2 Grid of 4 Social Logo Boxes (FB, Instagram, Discord, Gmail) -->
+              
+              <!-- 2x2 Social Logo Boxes -->
               <div class="grid grid-cols-2 gap-2.5">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/ariannemay737" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook" class="p-3 rounded-xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-sage-500/60 transition flex items-center justify-center group">
-                  <svg class="w-5 h-5 text-[#1877F2] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                <a href="https://www.facebook.com/ariannemay737" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" class="py-3 rounded-2xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-blue-400 flex items-center justify-center transition group">
+                  <svg class="w-5 h-5 text-[#1877F2] group-hover:scale-110 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
                 </a>
-
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/missattycpa" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram" class="p-3 rounded-xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-sage-500/60 transition flex items-center justify-center group">
-                  <svg class="w-5 h-5 text-[#E4405F] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <a href="https://www.instagram.com/missattycpa" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="py-3 rounded-2xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-pink-400 flex items-center justify-center transition group">
+                  <svg class="w-5 h-5 text-[#E4405F] group-hover:scale-110 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </a>
-
-                <!-- Discord -->
-                <button onclick="copyCode('missattycpa', 'Discord handle @missattycpa copied!')" title="Discord (@missattycpa)" aria-label="Discord (@missattycpa)" class="p-3 rounded-xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-sage-500/60 transition flex items-center justify-center group">
-                  <svg class="w-5 h-5 text-[#5865F2] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                <button onclick="copyCode('missattycpa', 'Discord handle @missattycpa copied!')" aria-label="Discord" title="Discord (@missattycpa)" class="py-3 rounded-2xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-indigo-400 flex items-center justify-center transition group">
+                  <svg class="w-5 h-5 text-[#5865F2] group-hover:scale-110 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
                 </button>
-
-                <!-- Gmail -->
-                <a href="mailto:ariannemay737@gmail.com" title="Gmail (ariannemay737@gmail.com)" aria-label="Gmail (ariannemay737@gmail.com)" class="p-3 rounded-xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-sage-500/60 transition flex items-center justify-center group">
-                  <svg class="w-5 h-5 text-[#EA4335] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                <a href="mailto:ariannemay737@gmail.com" aria-label="Gmail" title="Gmail (ariannemay737@gmail.com)" class="py-3 rounded-2xl bg-oat-100/90 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 hover:border-red-400 flex items-center justify-center transition group">
+                  <svg class="w-5 h-5 text-[#EA4335] group-hover:scale-110 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
-      <!-- BENTO DASHBOARD: DESK SETUP + MANTRA PHOTO + COZY VITALS -->
+      <!-- BENTO DASHBOARD: KEEP GOING (4 COLS) + PASTEL 4-QUADRANT QUICK EXPLORE (8 COLS) -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
         
-        <!-- Desk Setup Showcase (7 cols) -->
-        <div class="md:col-span-7 rounded-3xl overflow-hidden bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between shadow-2xs group">
-          <div class="relative overflow-hidden bg-oat-200 dark:bg-espresso-900 h-64 sm:h-72">
-            <img 
-              src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/studywithme.JPG" 
-              alt="Arianne May Desk Setup" 
-              class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]" 
-              onerror="this.parentElement.innerHTML='<div class=\'p-8 h-full flex items-center justify-center text-center text-xs font-mono text-stone-400\'>Desk Setup Preview</div>'"
-            />
-            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-stone-900/75 backdrop-blur-xs text-oat-50 text-[11px] font-mono">
-              🌿 Desk &amp; Focus Space
-            </span>
-          </div>
-          <div class="p-5 flex items-center justify-between gap-3">
-            <div>
-              <h2 class="text-sm font-bold text-stone-900 dark:text-oat-50">Where Everything Happens</h2>
-              <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5 font-light">M1 MacBook Air, iPad Air, external display &amp; a chilled tumbler always within reach.</p>
-            </div>
-            <span class="text-lg shrink-0">🪴</span>
-          </div>
-        </div>
-
-        <!-- Daily Mantra Photo ("KEEP GOING") (5 cols) -->
-        <div class="md:col-span-5 rounded-3xl overflow-hidden bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between shadow-2xs group">
+        <!-- Daily Mantra Photo ("KEEP GOING") (4 cols to match Cozy Staples below) -->
+        <div class="md:col-span-4 rounded-3xl overflow-hidden bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between shadow-2xs group">
           <div class="relative overflow-hidden bg-oat-200 dark:bg-espresso-900 h-64 sm:h-72">
             <img 
               src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/KEEP%20GOING.jpeg" 
@@ -390,18 +364,78 @@
           <div class="p-5 flex items-center justify-between gap-3">
             <div>
               <h2 class="text-sm font-bold text-stone-900 dark:text-oat-50">Keep Going</h2>
-              <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5 font-light">Small, consistent steps compound into big milestones.</p>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5 font-light">Small progress is still progress. Padayon!</p>
             </div>
             <span class="text-caramel-500 dark:text-caramel-400 text-lg shrink-0 animate-twinkle">✦</span>
+          </div>
+        </div>
+
+        <!-- Pastel Four-Quadrant Quick Explore Tile (8 cols) -->
+        <div class="md:col-span-8 p-5 sm:p-6 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 shadow-2xs">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 flex-1">
+            
+            <!-- Quadrant 1: APPS (Soft Emerald) -->
+            <button onclick="switchTab('apps')" class="p-5 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border border-emerald-200/80 dark:border-emerald-800/50 hover:bg-emerald-100/80 dark:hover:bg-emerald-900/50 hover:border-emerald-400/70 transition flex flex-col justify-between text-left group">
+              <div class="flex items-center justify-between w-full">
+                <span class="text-2xl">🪴</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-emerald-600/70 dark:text-emerald-400/70 group-hover:text-emerald-700 dark:group-hover:text-emerald-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+              </div>
+              <div class="mt-4">
+                <span class="block text-sm font-bold tracking-wide text-emerald-950 dark:text-emerald-100">APPS</span>
+                <span class="block text-xs font-mono text-emerald-700/80 dark:text-emerald-300/80 mt-0.5">Focus tools, socials &amp; daily stack</span>
+              </div>
+            </button>
+
+<!-- Quadrant 2: SHOP & LINKS (Soft Rose) -->
+            <button onclick="switchTab('shop')" class="p-5 rounded-2xl bg-rose-50/90 dark:bg-rose-950/40 border border-rose-200/80 dark:border-rose-800/50 hover:bg-rose-100/80 dark:hover:bg-rose-900/50 hover:border-rose-400/70 transition flex flex-col justify-between text-left group">
+              <div class="flex items-center justify-between w-full">
+                <span class="text-2xl">☕</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-rose-600/70 dark:text-rose-400/70 group-hover:text-rose-700 dark:group-hover:text-rose-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+              </div>
+              <div class="mt-4">
+                <span class="block text-sm font-bold tracking-wide text-rose-950 dark:text-rose-100">SHOP &amp; LINKS</span>
+                <span class="block text-xs font-mono text-rose-700/80 dark:text-rose-300/80 mt-0.5">Referral perks, bonuses &amp; planners</span>
+              </div>
+            </button>
+
+            <!-- Quadrant 3: PORTFOLIO (Warm Amber) -->
+            <button onclick="switchTab('portfolio')" class="p-5 rounded-2xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-800/50 hover:bg-amber-100/80 dark:hover:bg-amber-900/50 hover:border-amber-400/70 transition flex flex-col justify-between text-left group">
+              <div class="flex items-center justify-between w-full">
+                <span class="text-2xl">✨</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-amber-600/70 dark:text-amber-400/70 group-hover:text-amber-700 dark:group-hover:text-amber-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+              </div>
+              <div class="mt-4">
+                <span class="block text-sm font-bold tracking-wide text-amber-950 dark:text-amber-100">PORTFOLIO</span>
+                <span class="block text-xs font-mono text-amber-700/80 dark:text-amber-300/80 mt-0.5">Discord bots, communities &amp; projects</span>
+              </div>
+            </button>
+            
+            <!-- Quadrant 4: CAREER (Soft Sky) -->
+            <button onclick="switchTab('career')" class="p-5 rounded-2xl bg-sky-50/90 dark:bg-sky-950/40 border border-sky-200/80 dark:border-sky-800/50 hover:bg-sky-100/80 dark:hover:bg-sky-900/50 hover:border-sky-400/70 transition flex flex-col justify-between text-left group">
+              <div class="flex items-center justify-between w-full">
+                <span class="text-2xl">🌱</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-sky-600/70 dark:text-sky-400/70 group-hover:text-sky-700 dark:group-hover:text-sky-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+              </div>
+              <div class="mt-4">
+                <span class="block text-sm font-bold tracking-wide text-sky-950 dark:text-sky-100">CAREER</span>
+                <span class="block text-xs font-mono text-sky-700/80 dark:text-sky-300/80 mt-0.5">Work background, skills &amp; resume</span>
+              </div>
+            </button>
+
+          </div>
+
+          <div class="px-1 pt-1 flex items-center justify-between text-xs font-mono text-stone-400">
+            <span>Quick Explore — Jump to any section</span>
+            <span>✦</span>
           </div>
         </div>
 
       </div>
 
       <!-- COZY VITALS & CURRENT FOCUS BENTO ROW (3 EQUAL COLUMNS) -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         
-        <!-- Card 1: Cozy Staples -->
+        <!-- Card 1: Cozy Staples (Matches 4-col Keep Going width above) -->
         <div class="p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 space-y-2.5">
           <div class="flex items-center justify-between">
             <span class="text-xs font-mono uppercase tracking-wider text-sage-600 dark:text-sage-400 font-semibold">Cozy Staples</span>
@@ -414,7 +448,7 @@
             </svg>
           </div>
           <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed">
-            Iced black coffee with stevia, oat milk lattes (25% sweet), late afternoon walks, and evening jasmine green tea!
+            Iced black coffee with stevia, oat milk spanish lattes, late afternoon walks, and evening jasmine green tea!
           </p>
         </div>
 
@@ -431,7 +465,7 @@
             </svg>
           </div>
           <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed">
-            Mind-bending sci-fi thrillers, unsolved mysteries, time-loop stories, and edge-of-your-seat apocalyptic disaster movies.
+            Mind-bending sci-fi, unsolved mysteries, psychological thrillers, and edge-of-your-seat apocalyptic disaster movies.
           </p>
         </div>
 
@@ -446,131 +480,138 @@
             </svg>
           </div>
           <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed">
-            Open to asynchronous remote roles, financial transcript QA, workflow writing, and building helpful digital tools.
+            Open to asynchronous remote roles involving financial quality control, legal writing, and accounting or audit support.
           </p>
         </div>
 
       </div>
 
-      <!-- SPOTIFY PLAYLISTS SPOTLIGHT -->
-      <div class="p-6 sm:p-7 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 space-y-5 shadow-2xs">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <div class="flex items-center gap-2.5">
+      <!-- SPOTIFY PLAYLISTS SPOTLIGHT (COLLAPSIBLE) -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between gap-3 bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-2.5 min-w-0">
             <!-- Spotify Official SVG Icon -->
             <div class="w-9 h-9 rounded-xl bg-[#1DB954]/15 text-[#1DB954] flex items-center justify-center shrink-0">
               <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
             </div>
-            <div>
-              <h3 class="text-base font-bold text-stone-900 dark:text-oat-50">On Rotation — Spotify Playlists</h3>
-              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Soundtracks for daily walks, cafe focus &amp; workouts</p>
+            <div class="min-w-0">
+              <h3 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50 truncate">On Rotation — Spotify Playlists</h3>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400 truncate">Soundtracks for daily walks, cafe focus &amp; workouts</p>
             </div>
           </div>
-          <a href="https://open.spotify.com/user/ariiannemay?si=a417ed99c9304d5e" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-[#1DB954] hover:underline">
-            <span>@ariiannemay on Spotify</span>
-            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-          </a>
-        </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="https://open.spotify.com/user/ariiannemay?si=a417ed99c9304d5e" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-[#1DB954] hover:underline">
+              <span>@ariiannemay</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">4</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 sm:p-7 border-t border-stone-200/60 dark:border-espresso-700 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           
-          <!-- Playlist 1: timesless & random -->
-          <a href="https://open.spotify.com/playlist/7E5pLmTok6GBPk2SW3EUXG?si=04ecebf9ffad4fd7" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
-            <!-- Cover Art -->
-            <div class="relative aspect-square w-full bg-stone-900 overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/timeless%20%26%20random.jpeg" 
-                alt="timesless & random cover art" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
-              <div class="hidden w-full h-full bg-gradient-to-br from-stone-800 via-amber-950 to-stone-900 p-4 flex-col justify-between">
-                <span class="text-[10px] font-mono text-amber-200/80">1,000+ TRACKS ✦</span>
-                <span class="font-serif italic text-sm text-oat-50">timesless &amp; random</span>
+            <!-- Playlist 1: timesless & random -->
+            <a href="https://open.spotify.com/playlist/7E5pLmTok6GBPk2SW3EUXG?si=04ecebf9ffad4fd7" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
+              <!-- Cover Art -->
+              <div class="relative aspect-square w-full bg-stone-900 overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/timeless%20%26%20random.jpeg" 
+                  alt="timesless & random cover art" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden w-full h-full bg-gradient-to-br from-stone-800 via-amber-950 to-stone-900 p-4 flex-col justify-between">
+                  <span class="text-[10px] font-mono text-amber-200/80">1,000+ TRACKS ✦</span>
+                  <span class="font-serif italic text-sm text-oat-50">timesless &amp; random</span>
+                </div>
               </div>
-            </div>
-            <div class="p-3.5 space-y-1">
-              <div class="flex items-center justify-between gap-1">
-                <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">timesless &amp; random</h4>
-                <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+              <div class="p-3.5 space-y-1">
+                <div class="flex items-center justify-between gap-1">
+                  <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">timesless &amp; random</h4>
+                  <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+                </div>
+                <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">contains over a thousand of songs I listen to</p>
               </div>
-              <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">contains over a thousand of songs I listen to</p>
-            </div>
-          </a>
+            </a>
 
-          <!-- Playlist 2: chill mix -->
-          <a href="https://open.spotify.com/playlist/6swFlNhpjjnfRjITeCEMP9?si=c39844bb6c544465" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
-            <!-- Cover Art -->
-            <div class="relative aspect-square w-full bg-emerald-950 overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/chill%20mix.jpeg" 
-                alt="chill mix cover art" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
-              <div class="hidden w-full h-full bg-gradient-to-br from-emerald-900 via-sage-600 to-teal-950 p-4 flex-col justify-between">
-                <span class="text-[10px] font-mono text-emerald-100/80">RELAX 🍃</span>
-                <span class="font-serif italic text-sm text-oat-50">chill mix</span>
+            <!-- Playlist 2: chill mix -->
+            <a href="https://open.spotify.com/playlist/6swFlNhpjjnfRjITeCEMP9?si=c39844bb6c544465" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
+              <!-- Cover Art -->
+              <div class="relative aspect-square w-full bg-emerald-950 overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/chill%20mix.jpeg" 
+                  alt="chill mix cover art" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden w-full h-full bg-gradient-to-br from-emerald-900 via-sage-600 to-teal-950 p-4 flex-col justify-between">
+                  <span class="text-[10px] font-mono text-emerald-100/80">RELAX 🍃</span>
+                  <span class="font-serif italic text-sm text-oat-50">chill mix</span>
+                </div>
               </div>
-            </div>
-            <div class="p-3.5 space-y-1">
-              <div class="flex items-center justify-between gap-1">
-                <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">chill mix</h4>
-                <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+              <div class="p-3.5 space-y-1">
+                <div class="flex items-center justify-between gap-1">
+                  <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">chill mix</h4>
+                  <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+                </div>
+                <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">picked songs for chillin 🍃</p>
               </div>
-              <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">picked songs for chillin 🍃</p>
-            </div>
-          </a>
+            </a>
 
-          <!-- Playlist 3: coffee & music -->
-          <a href="https://open.spotify.com/playlist/1XJjogbdM3HrXkmo8wVKVA?si=6ec48e7b2f8a402d" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
-            <!-- Cover Art -->
-            <div class="relative aspect-square w-full bg-amber-950 overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/coffee%20%26%20music.jpg" 
-                alt="coffee & music cover art" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
-              <div class="hidden w-full h-full bg-gradient-to-br from-amber-800 via-caramel-500 to-stone-900 p-4 flex-col justify-between">
-                <span class="text-[10px] font-mono text-amber-100/80">JAZZ CAFE 🎷</span>
-                <span class="font-serif italic text-sm text-oat-50">coffee &amp; music</span>
+            <!-- Playlist 3: coffee & music -->
+            <a href="https://open.spotify.com/playlist/1XJjogbdM3HrXkmo8wVKVA?si=6ec48e7b2f8a402d" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
+              <!-- Cover Art -->
+              <div class="relative aspect-square w-full bg-amber-950 overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/coffee%20%26%20music.jpg" 
+                  alt="coffee & music cover art" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden w-full h-full bg-gradient-to-br from-amber-800 via-caramel-500 to-stone-900 p-4 flex-col justify-between">
+                  <span class="text-[10px] font-mono text-amber-100/80">JAZZ CAFE 🎷</span>
+                  <span class="font-serif italic text-sm text-oat-50">coffee &amp; music</span>
+                </div>
               </div>
-            </div>
-            <div class="p-3.5 space-y-1">
-              <div class="flex items-center justify-between gap-1">
-                <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">coffee &amp; music</h4>
-                <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+              <div class="p-3.5 space-y-1">
+                <div class="flex items-center justify-between gap-1">
+                  <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">coffee &amp; music</h4>
+                  <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+                </div>
+                <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">random jazz cafe vibes 🎷</p>
               </div>
-              <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">random jazz cafe vibes 🎷</p>
-            </div>
-          </a>
+            </a>
 
-          <!-- Playlist 4: exercise -->
-          <a href="https://open.spotify.com/playlist/413yEE3AxpoQg9Tf2IcU40?si=a3923fcb15f5468a" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
-            <!-- Cover Art -->
-            <div class="relative aspect-square w-full bg-orange-900 overflow-hidden">
-              <img 
-                src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/exercise.jpg" 
-                alt="exercise cover art" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
-              <div class="hidden w-full h-full bg-gradient-to-br from-rose-800 via-orange-600 to-amber-700 p-4 flex-col justify-between">
-                <span class="text-[10px] font-mono text-orange-100/80">HIGH TEMPO 👟</span>
-                <span class="font-serif italic text-sm text-oat-50">exercise</span>
+            <!-- Playlist 4: exercise -->
+            <a href="https://open.spotify.com/playlist/413yEE3AxpoQg9Tf2IcU40?si=a3923fcb15f5468a" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/80 dark:border-espresso-700 hover:border-[#1DB954]/60 overflow-hidden flex flex-col justify-between transition">
+              <!-- Cover Art -->
+              <div class="relative aspect-square w-full bg-orange-900 overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/exercise.jpg" 
+                  alt="exercise cover art" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden w-full h-full bg-gradient-to-br from-rose-800 via-orange-600 to-amber-700 p-4 flex-col justify-between">
+                  <span class="text-[10px] font-mono text-orange-100/80">HIGH TEMPO 👟</span>
+                  <span class="font-serif italic text-sm text-oat-50">exercise</span>
+                </div>
               </div>
-            </div>
-            <div class="p-3.5 space-y-1">
-              <div class="flex items-center justify-between gap-1">
-                <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">exercise</h4>
-                <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+              <div class="p-3.5 space-y-1">
+                <div class="flex items-center justify-between gap-1">
+                  <h4 class="font-bold text-xs sm:text-sm text-stone-900 dark:text-oat-50 truncate">exercise</h4>
+                  <i data-lucide="play-circle" class="w-4 h-4 text-[#1DB954] shrink-0"></i>
+                </div>
+                <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">upbeat songs for ur daily exercise! 👟</p>
               </div>
-              <p class="text-[11px] text-stone-500 dark:text-stone-400 font-light line-clamp-2">upbeat songs for ur daily exercise! 👟</p>
-            </div>
-          </a>
+            </a>
 
+          </div>
         </div>
-      </div>
+      </details>
 
     </section>
 
@@ -597,28 +638,50 @@
         </div>
       </div>
 
-      <div id="apps-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div id="apps-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
-        <!-- Yeolpumta (YPT) -->
+<!-- 1. Yeolpumta (YPT) -->
         <div data-category="focus" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-orange-100/90 dark:bg-orange-950/60 text-orange-600 flex items-center justify-center text-lg">⏳</div>
-              <div>
-                <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Yeolpumta (YPT)</h3>
-                <span class="text-[11px] font-mono text-stone-400">Focus &amp; Study</span>
+          <div class="space-y-3">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white dark:bg-espresso-900 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                  <img src="https://www.google.com/s2/favicons?domain=yeolpumta.com&sz=128" alt="Yeolpumta Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden text-lg">⏳</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Yeolpumta (YPT)</h3>
+                  <button onclick="copyCode('missattycpa.', 'YPT ID missattycpa. copied!')" class="text-[11px] font-mono text-sage-600 dark:text-sage-400 hover:underline">ID: missattycpa. 📋</button>
+                </div>
+              </div>
+              <span class="px-2 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400 text-[10px] font-mono">Daily</span>
+            </div>
+          </div>
+<div class="text-[11px] font-mono pt-1">
+            <div class="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/70 dark:border-espresso-700">
+              <span class="text-stone-400 shrink-0">Study Groups:</span>
+              <div class="flex items-center gap-1.5 min-w-0 truncate">
+                <a href="https://link.yeolpumta.com/P3R5cGU9Z3JvdXBJbnZpdGUmaWQ9NjE4MTgxMg==" target="_blank" rel="noopener noreferrer" class="font-semibold text-stone-800 dark:text-oat-50 hover:text-sage-600 dark:hover:text-sage-400 transition shrink-0">
+                  LOCKED IN 📷🔒🔥 ↗
+                </a>
+                <span class="text-stone-400">•</span>
+                <a href="https://link.yeolpumta.com/P3R5cGU9Z3JvdXBJbnZpdGUmaWQ9NTc4NTYzOA==" target="_blank" rel="noopener noreferrer" class="font-semibold text-stone-800 dark:text-oat-50 hover:text-sage-600 dark:hover:text-sage-400 transition truncate">
+                  LAW PH ⚖🇵🇭 ↗
+                </a>
               </div>
             </div>
-            <span class="px-2 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400 text-[10px] font-mono">Daily</span>
           </div>
-          <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Group study timers, cam rooms (LOCKED IN &amp; LAW PH), and subject-by-subject hour tracking.</p>
         </div>
 
-        <!-- Forest App -->
+        
+        <!-- 2. Forest App -->
         <div data-category="focus" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-emerald-100/90 dark:bg-emerald-950/60 text-emerald-600 flex items-center justify-center text-lg">🌲</div>
+              <div class="w-10 h-10 rounded-xl bg-white dark:bg-espresso-900 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                <img src="https://www.google.com/s2/favicons?domain=forestapp.cc&sz=128" alt="Forest App Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <span class="hidden text-lg">🌲</span>
+              </div>
               <div>
                 <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Forest</h3>
                 <span class="text-[11px] font-mono text-stone-400">Focus &amp; Study</span>
@@ -629,11 +692,14 @@
           <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Pomodoro planting sessions with Discord study buddies via my PlantWithMe bot.</p>
         </div>
 
-        <!-- GoodNotes -->
+        <!-- 3. GoodNotes -->
         <div data-category="focus" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-sky-100/90 dark:bg-sky-950/60 text-sky-600 flex items-center justify-center text-lg">✍️</div>
+              <div class="w-10 h-10 rounded-xl bg-white dark:bg-espresso-900 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                <img src="https://www.google.com/s2/favicons?domain=goodnotes.com&sz=128" alt="GoodNotes Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <span class="hidden text-lg">✍️</span>
+              </div>
               <div>
                 <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">GoodNotes</h3>
                 <span class="text-[11px] font-mono text-stone-400">Focus &amp; Study</span>
@@ -644,11 +710,13 @@
           <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Digital notebooks, PDF annotations, and aesthetic Apple Pencil study trackers.</p>
         </div>
 
-        <!-- Discord -->
+        <!-- 4. Discord -->
         <div data-category="social" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-indigo-100/90 dark:bg-indigo-950/60 text-[#5865F2] flex items-center justify-center text-lg">💬</div>
+              <div class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-[#5865F2] flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+              </div>
               <div>
                 <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Discord</h3>
                 <span class="text-[11px] font-mono text-stone-400">Social &amp; Media</span>
@@ -659,11 +727,13 @@
           <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Co-running StudyWithMe, hosting coworking rooms, and maintaining PlantWithMe.</p>
         </div>
 
-        <!-- Spotify -->
+        <!-- 5. Spotify -->
         <div data-category="social" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-emerald-100/90 dark:bg-emerald-950/60 text-[#1DB954] flex items-center justify-center text-lg">🎧</div>
+              <div class="w-10 h-10 rounded-xl bg-[#1DB954]/15 text-[#1DB954] flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              </div>
               <div>
                 <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Spotify</h3>
                 <span class="text-[11px] font-mono text-stone-400">Social &amp; Media</span>
@@ -674,11 +744,17 @@
           <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Curating chill mixes, jazz cafe instrumentals, and upbeat workout playlists.</p>
         </div>
 
-        <!-- Letterboxd -->
+        <!-- 6. Letterboxd -->
         <div data-category="social" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-stone-900 text-white flex items-center justify-center text-sm font-bold">🎞️</div>
+              <div class="w-10 h-10 rounded-xl bg-stone-900 text-white flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6" viewBox="0 0 36 16" fill="none">
+                  <circle cx="8" cy="8" r="5" fill="#FF8000"/>
+                  <circle cx="18" cy="8" r="5" fill="#00E054"/>
+                  <circle cx="28" cy="8" r="5" fill="#40BCF4"/>
+                </svg>
+              </div>
               <div>
                 <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Letterboxd</h3>
                 <span class="text-[11px] font-mono text-stone-400">Social &amp; Media</span>
@@ -689,11 +765,13 @@
           <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Logging mind-bending sci-fi thrillers, mysteries, and disaster movie marathons.</p>
         </div>
 
-        <!-- Notion -->
+        <!-- 7. Notion -->
         <div data-category="work" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-stone-200/80 dark:bg-espresso-700 text-stone-800 dark:text-stone-200 flex items-center justify-center text-lg">🗂️</div>
+              <div class="w-10 h-10 rounded-xl bg-stone-100 dark:bg-espresso-900 border border-stone-200/80 dark:border-espresso-700 text-stone-900 dark:text-oat-50 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg>
+              </div>
               <div>
                 <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Notion</h3>
                 <span class="text-[11px] font-mono text-stone-400">Workflow</span>
@@ -701,43 +779,67 @@
             </div>
             <span class="px-2 py-0.5 rounded-full bg-oat-200 dark:bg-espresso-700 text-stone-500 text-[10px] font-mono">Second Brain</span>
           </div>
-          <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Project dashboards, habit tracking, and templates in development for my shop.</p>
+          <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Project dashboards, habit tracking, and templates in development.</p>
         </div>
 
-        <!-- Chrome Scratchpads & Tools -->
+        <!-- 8. Chrome Notepad (Chrome Logo) -->
         <div data-category="work" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-amber-100/90 dark:bg-amber-950/60 text-amber-600 flex items-center justify-center text-lg">⚡</div>
+              <div class="w-10 h-10 rounded-xl bg-white dark:bg-espresso-900 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                <img src="https://www.google.com/s2/favicons?domain=google.com/chrome&sz=128" alt="Google Chrome Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <span class="hidden text-lg">🌐</span>
+              </div>
               <div>
-                <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Browser Scratchpads</h3>
+                <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Chrome Notepad</h3>
                 <span class="text-[11px] font-mono text-stone-400">Workflow</span>
               </div>
             </div>
             <span class="px-2 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 text-[10px] font-mono">Custom</span>
           </div>
-          <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Lightweight offline HTML data-URL tabs for quick transcript notes and QA checklists.</p>
+          <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Lightweight offline HTML data-URL tabs for quick notes and copy-pasting.</p>
         </div>
 
-        <!-- Cozy & Casual Games -->
+<!-- 9. Call of Duty: Mobile -->
         <div data-category="games" class="app-card p-5 rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-3">
           <div class="flex items-start justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-rose-100/90 dark:bg-rose-950/60 text-rose-600 flex items-center justify-center text-lg">🎮</div>
+              <div class="w-10 h-10 rounded-xl bg-stone-900 border border-stone-700 flex items-center justify-center overflow-hidden shrink-0 shadow-2xs">
+                <img 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlHqo6HmSLXvrLO_tzNA3vtTEJQY0-A8lCk_vQN8Ahjw&s=10" 
+                  alt="Call of Duty: Mobile Logo" 
+                  class="w-full h-full object-cover" 
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" 
+                />
+                <span class="hidden text-lg">🎯</span>
+              </div>
               <div>
-                <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Cozy &amp; Puzzle Games</h3>
+                <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Call of Duty: Mobile</h3>
                 <span class="text-[11px] font-mono text-stone-400">Games</span>
               </div>
-            </div>
+              </div>
             <span class="px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400 text-[10px] font-mono">Downtime</span>
           </div>
-          <p class="text-xs text-stone-600 dark:text-stone-300 font-light leading-relaxed">Relaxing simulation, logic puzzles, and quick mobile games during study breaks.</p>
+
+          <div class="text-[11px] font-mono pt-1">
+            <div class="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-oat-100/90 dark:bg-espresso-900/80 border border-stone-200/70 dark:border-espresso-700">
+              <span class="text-stone-400 shrink-0">IGN/UID:</span>
+              <div class="flex items-center gap-1.5 min-w-0 truncate">
+                <button onclick="copyCode('YAN | amethyst', 'CODM IGN copied!')" class="font-semibold text-stone-800 dark:text-oat-50 hover:text-sage-600 dark:hover:text-sage-400 transition shrink-0" title="Copy IGN">
+                  YAN | amethyst
+                </button>
+                <span class="text-stone-400">•</span>
+                <button onclick="copyCode('6844211150561738753', 'CODM UID copied!')" class="font-semibold text-stone-800 dark:text-oat-50 hover:text-sage-600 dark:hover:text-sage-400 transition truncate" title="Copy UID">
+                  6844211150561738753 📋
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-
     </section>
-
+    
     <!-- ========================================== -->
     <!-- TAB 3: PORTFOLIO (BOTS, COMMUNITIES & WEB) -->
     <!-- ========================================== -->
@@ -833,8 +935,8 @@
             <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-0.5">All-in-one personal website &amp; open-source repos on GitHub.</p>
           </div>
         </div>
-        <a href="https://github.com/ariiannemay" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-stone-300 dark:border-espresso-700 hover:bg-oat-200/60 dark:hover:bg-espresso-700 text-xs font-semibold transition shrink-0">
-          <i data-lucide="github" class="w-3.5 h-3.5"></i>
+<a href="https://github.com/ariiannemay" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-stone-300 dark:border-espresso-700 hover:bg-oat-200/60 dark:hover:bg-espresso-700 text-xs font-semibold transition shrink-0">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           <span>@ariiannemay</span>
         </a>
       </div>
@@ -1185,10 +1287,10 @@
           <h2 class="text-2xl font-serif font-bold text-stone-900 dark:text-oat-50">Career &amp; Background</h2>
           <p class="text-xs text-stone-500 font-mono mt-0.5">Remote financial quality control, workflow writing, and assurance</p>
         </div>
-        <button onclick="printResume()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-stone-900 text-oat-50 hover:bg-stone-800 dark:bg-oat-100 dark:text-stone-900 dark:hover:bg-oat-200 text-xs font-semibold transition">
-          <i data-lucide="printer" class="w-3.5 h-3.5"></i>
-          <span>Print / Save PDF</span>
-        </button>
+<a href="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Arianne%20May%20B.%20Amosin_2026%20-%20Admin.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-stone-900 text-oat-50 hover:bg-stone-800 dark:bg-oat-100 dark:text-stone-900 dark:hover:bg-oat-200 text-xs font-semibold transition">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>Export / View PDF</span>
+        </a>
       </div>
 
       <!-- Experience Cards -->
@@ -1201,8 +1303,8 @@
           </div>
           <p class="text-xs font-semibold text-stone-600 dark:text-stone-400">Mercor</p>
           <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light">
-            <li>Create structured workflow prompts, evaluative rubrics, and analytical benchmarks for specialized domain tasks.</li>
-            <li>Review edge-case outputs for logical consistency, clarity, and procedural accuracy.</li>
+            <li>Executed end-to-end operational workflows across desktop environments while authoring comprehensive process guidelines, reference assets, and structured walkthroughs detailing UI paths and decision-making rationale.</li>
+            <li>Conducted thorough quality assurance reviews on completed workflows to audit adherence to enterprise client specifications, resolve edge-case deviations, and maintain zero-defect standards prior to final sign-off.</li>
           </ul>
         </div>
 
@@ -1213,8 +1315,8 @@
           </div>
           <p class="text-xs font-semibold text-stone-600 dark:text-stone-400">Remoat Teams</p>
           <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light">
-            <li>Edit, verify, and perform quality control on financial earnings calls, investor briefings, and corporate transcripts for global clients.</li>
-            <li>Ensure precision across accounting terminology, financial figures, and speaker attribution under tight turnaround windows.</li>
+            <li>Audited high-volume earnings calls, investor conferences, and corporate proceedings while verifying financial terminology, ticker symbols, and executive names against public filings and company disclosures to ensure numerical precision.</li>
+            <li>Performed real-time quality control against strict style guides and SLAs across editorial platforms, consistently delivering publication-ready, error-free transcripts under tight turnaround deadlines.</li>
           </ul>
         </div>
 
@@ -1225,7 +1327,8 @@
           </div>
           <p class="text-xs font-semibold text-stone-600 dark:text-stone-400">SGV &amp; Co.</p>
           <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light">
-            <li>Assisted assurance teams with statutory audit documentation, substantive testing, and account reconciliations.</li>
+            <li>Assisted audit teams in executing tests of controls and substantive procedures, verifying supporting documents, and facilitating bank confirmation requests to validate year-end cash balances and management assertions.</li>
+            <li> Prepared and indexed electronic working papers, reconciled financial statement lead schedules, and performed footing, cross-referencing, and independent recalculations to ensure numerical accuracy and regulatory compliance.</li>
           </ul>
         </div>
 
@@ -1236,24 +1339,54 @@
           </div>
           <p class="text-xs font-semibold text-stone-600 dark:text-stone-400">FEU IABF Student Council</p>
           <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light">
-            <li>Audited student organization liquidation reports and coordinated operational logistics for college-wide initiatives.</li>
+            <li>Reviewed liquidation reports, receipts, and project disbursements while helping standardize basic check-and-balance procedures to ensure student council funds were properly spent and documented.</li>
+            <li> Handled venue setups, material preparation, and on-the-ground logistics for student body events while coordinating between the Audit and Operations teams to track tasks and organize project paperwork.</li>
           </ul>
         </div>
 
       </div>
 
-      <!-- Academic & Credentials Summary -->
+<!-- Education Card (Separate) -->
+      <div class="p-6 rounded-3xl bg-oat-200/60 dark:bg-espresso-800/60 border border-stone-200/80 dark:border-espresso-700 space-y-4">
+        <h3 class="text-sm font-bold text-stone-900 dark:text-oat-50">Education</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-stone-600 dark:text-stone-300 font-light">
+          
+<div class="p-4 rounded-2xl bg-white/80 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 space-y-1">
+            <span class="block text-[11px] font-mono text-sage-600 dark:text-sage-400">2022 – 2026</span>
+            <div class="flex flex-wrap items-center gap-2">
+              <h4 class="font-bold text-stone-900 dark:text-oat-50 text-xs sm:text-sm">Juris Doctor</h4>
+              <span class="px-2 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 text-[10px] font-mono font-semibold">Graduated Batch Top 3</span>
+            </div>
+            <p class="text-stone-600 dark:text-stone-300">University of San Agustin</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white/80 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 space-y-1">
+            <span class="block text-[11px] font-mono text-stone-500 dark:text-stone-400">2018 – 2019</span>
+            <h4 class="font-bold text-stone-900 dark:text-oat-50 text-xs sm:text-sm">Bachelor of Science in Accountancy</h4>
+            <p class="text-stone-600 dark:text-stone-300">Far Eastern University</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white/80 dark:bg-espresso-900/70 border border-stone-200/70 dark:border-espresso-700 space-y-1">
+            <span class="block text-[11px] font-mono text-stone-500 dark:text-stone-400">2014 – 2018</span>
+            <h4 class="font-bold text-stone-900 dark:text-oat-50 text-xs sm:text-sm">Bachelor of Science in Business Administration</h4>
+            <p class="text-stone-600 dark:text-stone-300">Major in Internal Auditing • Far Eastern University</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Credentials & Core Skills Row -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="p-6 rounded-3xl bg-oat-200/60 dark:bg-espresso-800/60 border border-stone-200/80 dark:border-espresso-700 space-y-3">
-          <h3 class="text-sm font-bold text-stone-900 dark:text-oat-50">Education &amp; Credentials</h3>
-          <ul class="space-y-2 text-xs text-stone-600 dark:text-stone-300 font-light">
+          <h3 class="text-sm font-bold text-stone-900 dark:text-oat-50">Credentials &amp; Eligibilities</h3>
+          <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-300 font-light">
             <li class="flex items-start gap-2">
               <span class="text-sage-600 dark:text-sage-400 font-bold">✦</span>
-              <span><strong>Juris Doctor (JD)</strong> — Graduated Batch Top 3; 2026 Philippine Bar Examinee</span>
+              <span><strong>Certified Public Accountant (CPA) </strong> — Professional Regulation Commission</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-sage-600 dark:text-sage-400 font-bold">✦</span>
-              <span><strong>Certified Public Accountant (CPA)</strong> — Licensed in the Philippines</span>
+              <span><strong>Civil Service Commission (CSC) Professional Eligibility</strong> — Career Service Professional</span>
             </li>
           </ul>
         </div>
@@ -1263,14 +1396,14 @@
           <div class="flex flex-wrap gap-2 text-xs">
             <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Financial Transcript QA</span>
             <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Audit &amp; Compliance</span>
-            <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Legal &amp; Technical Writing</span>
-            <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Python / Discord Bots</span>
+            <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Legal Writing</span>
+            <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Google Workspace &amp; Microsoft Office</span>
+            <span class="px-3 py-1 rounded-xl bg-white dark:bg-espresso-900 text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-espresso-700 font-mono">Written &amp; Verbal Communication</span>
           </div>
         </div>
       </div>
 
     </section>
-
     <!-- ========================================== -->
     <!-- TAB 6: CONTACT (DIRECT EMAIL & SOCIALS)    -->
     <!-- ========================================== -->
@@ -1287,51 +1420,57 @@
       <!-- TWO-COLUMN INBOX + DIRECT DETAILS -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         
-        <!-- Left (7 cols): Direct Message Form to ariannemay737@gmail.com -->
-        <div class="lg:col-span-7 p-6 sm:p-7 rounded-3xl bg-white/95 dark:bg-espresso-800/85 border border-stone-200/80 dark:border-espresso-700 shadow-2xs space-y-5">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="text-base font-bold text-stone-900 dark:text-oat-50">Send a Message to My Email</h3>
-              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400 mt-0.5">Recipient: ariannemay737@gmail.com</p>
+        <!-- Left (7 cols): Direct Message Form to ariannemay737@gmail.com + Availability Note -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="p-6 sm:p-7 rounded-3xl bg-white/95 dark:bg-espresso-800/85 border border-stone-200/80 dark:border-espresso-700 shadow-2xs space-y-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-base font-bold text-stone-900 dark:text-oat-50">Send a Message to My Email</h3>
+                <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400 mt-0.5">Recipient: ariannemay737@gmail.com</p>
+              </div>
+              <span class="text-xl">💌</span>
             </div>
-            <span class="text-xl">💌</span>
+
+            <form onsubmit="handleContact(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                  <label for="contact-name" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Your Name</label>
+                  <input type="text" id="contact-name" required placeholder="e.g. Alex" class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50">
+                </div>
+                <div class="space-y-1.5">
+                  <label for="contact-email" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Your Email</label>
+                  <input type="email" id="contact-email" required placeholder="you@example.com" class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50">
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="contact-subject" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Subject</label>
+                <input type="text" id="contact-subject" required placeholder="Collaboration, remote work, or just saying hi!" class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50">
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="contact-message" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Message</label>
+                <textarea id="contact-message" rows="4" required placeholder="Write your message here..." class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50"></textarea>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                <a href="mailto:ariannemay737@gmail.com" class="text-xs font-mono text-stone-500 hover:text-sage-600 dark:hover:text-sage-400 underline underline-offset-4">
+                  Or open default mail app directly
+                </a>
+                <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs sm:text-sm font-semibold transition shadow-2xs">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                  <span>Send to ariannemay737@gmail.com</span>
+                </button>
+              </div>
+            </form>
           </div>
 
-          <form onsubmit="handleContact(event)" class="space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="space-y-1.5">
-                <label for="contact-name" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Your Name</label>
-                <input type="text" id="contact-name" required placeholder="e.g. Alex" class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50">
-              </div>
-              <div class="space-y-1.5">
-                <label for="contact-email" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Your Email</label>
-                <input type="email" id="contact-email" required placeholder="you@example.com" class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50">
-              </div>
-            </div>
-
-            <div class="space-y-1.5">
-              <label for="contact-subject" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Subject</label>
-              <input type="text" id="contact-subject" required placeholder="Collaboration, remote work, or just saying hi!" class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50">
-            </div>
-
-            <div class="space-y-1.5">
-              <label for="contact-message" class="block text-xs font-semibold text-stone-700 dark:text-stone-300">Message</label>
-              <textarea id="contact-message" rows="4" required placeholder="Write your message here..." class="w-full px-3.5 py-2.5 rounded-xl bg-oat-100/80 dark:bg-espresso-900 border border-stone-200 dark:border-espresso-700 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sage-500/50"></textarea>
-            </div>
-
-            <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
-              <a href="mailto:ariannemay737@gmail.com" class="text-xs font-mono text-stone-500 hover:text-sage-600 dark:hover:text-sage-400 underline underline-offset-4">
-                Or open default mail app directly
-              </a>
-              <button type="submit" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs sm:text-sm font-semibold transition shadow-2xs">
-                <i data-lucide="send" class="w-3.5 h-3.5"></i>
-                <span>Send to ariannemay737@gmail.com</span>
-              </button>
-            </div>
-          </form>
+          <div class="p-5 rounded-3xl bg-sage-500/10 dark:bg-sage-400/10 border border-sage-500/25 text-xs text-stone-700 dark:text-stone-300 leading-relaxed font-light">
+            🌱 Open to asynchronous remote opportunities across accounting, legal support, transcript QA, and legal writing.
+          </div>
         </div>
 
-        <!-- Right (5 cols): Direct Details & Quick Copy -->
+        <!-- Right (5 cols): Direct Details + Where Everything Happens Desk Setup Card -->
         <div class="lg:col-span-5 space-y-4">
           <div class="p-6 rounded-3xl bg-white/95 dark:bg-espresso-800/85 border border-stone-200/80 dark:border-espresso-700 space-y-4">
             <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">Direct Details</h3>
@@ -1360,8 +1499,26 @@
             </div>
           </div>
 
-          <div class="p-5 rounded-3xl bg-sage-500/10 dark:bg-sage-400/10 border border-sage-500/25 text-xs text-stone-700 dark:text-stone-300 leading-relaxed font-light">
-            🌱 Open to asynchronous remote opportunities, transcript QA work, and creative bot/web collaborations.
+          <!-- Desk Setup Showcase ("Where Everything Happens") -->
+          <div class="rounded-3xl overflow-hidden bg-white/95 dark:bg-espresso-800/85 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between shadow-2xs group">
+            <div class="relative overflow-hidden bg-oat-200 dark:bg-espresso-900 h-52 sm:h-56">
+              <img 
+                src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/studywithme.JPG" 
+                alt="Arianne May Desk Setup" 
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]" 
+                onerror="this.parentElement.innerHTML='<div class=\'p-8 h-full flex items-center justify-center text-center text-xs font-mono text-stone-400\'>Desk Setup Preview</div>'"
+              />
+              <span class="absolute bottom-3.5 left-3.5 px-3 py-1 rounded-full bg-stone-900/75 backdrop-blur-xs text-oat-50 text-[11px] font-mono">
+                🌿 Desk &amp; Focus Space
+              </span>
+            </div>
+            <div class="p-5 flex items-center justify-between gap-3">
+              <div>
+                <h3 class="text-sm font-bold text-stone-900 dark:text-oat-50">Where Everything Happens</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5 font-light">M1 MacBook Air, iPad Air, external display &amp; a chilled tumbler always within reach.</p>
+              </div>
+              <span class="text-lg shrink-0">🪴</span>
+            </div>
           </div>
         </div>
 
@@ -1632,7 +1789,7 @@
         <span>🌱</span>
         <span>Arianne May • @missattycpa</span>
       </span>
-      <span>brewed with coffee &amp; code ✦</span>
+      <span>brewed with coffee ✦</span>
     </div>
   </footer>
 
