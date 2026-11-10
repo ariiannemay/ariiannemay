@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Arianne May (@missattycpa)</title>
+  <meta name="description" content="Bots, communities, review trackers, and web projects built for productivity, exam prep, and community focus.">
+
+  <!-- Open Graph / Social Link Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ariiannemay.vercel.app/portfolio">
+  <meta property="og:title" content="Portfolio — Arianne May (@missattycpa)">
+  <meta property="og:description" content="Bots, communities, review trackers, and web projects built for productivity, exam prep, and community focus.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/studywithme.JPG">
+
+  <!-- Twitter / X Link Preview Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ariiannemay.vercel.app/portfolio">
+  <meta name="twitter:title" content="Portfolio — Arianne May (@missattycpa)">
+  <meta name="twitter:description" content="Bots, communities, review trackers, and web projects built for productivity, exam prep, and community focus.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/studywithme.JPG">
+
+  <!-- Browser Favicon / Chrome Tab Logo -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/missattycpa%20logo.png" onerror="this.onerror=null;this.href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>'">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Playfair Display & Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            oat: {
+              50: '#FDFBF7',
+              100: '#FAF7F2',
+              200: '#F2ECE1',
+            },
+            espresso: {
+              900: '#161412',
+              800: '#211E1B',
+              700: '#2E2925',
+            },
+            sage: {
+              400: '#8FB392',
+              500: '#5B7A5E',
+              600: '#47614A',
+            },
+            caramel: {
+              400: '#D4A373',
+              500: '#A47148',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(140, 130, 120, 0.28);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(140, 130, 120, 0.48);
+    }
+    .glass-nav {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .tab-active {
+      background-color: #ffffff;
+      color: #292524;
+      box-shadow: 0 2px 10px -2px rgba(91, 122, 94, 0.16);
+    }
+    .dark .tab-active {
+      background-color: #2E2925;
+      color: #FAF7F2;
+      box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.45);
+    }
+    .tab-inactive {
+      color: #78716c;
+    }
+    .tab-inactive:hover {
+      color: #292524;
+    }
+    .dark .tab-inactive {
+      color: #a8a29e;
+    }
+    .dark .tab-inactive:hover {
+      color: #FAF7F2;
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-4px) rotate(3deg); }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.45; transform: scale(0.92); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    .animate-float {
+      animation: floatSlow 4.5s ease-in-out infinite;
+    }
+    .animate-twinkle {
+      animation: twinkle 3.2s ease-in-out infinite;
+    }
+
+    /* Smooth chevron rotation for collapsible categories */
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] > summary .chevron-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-oat-100 text-stone-800 dark:bg-espresso-900 dark:text-stone-200 antialiased min-h-screen selection:bg-sage-400/30 flex flex-col justify-between transition-colors duration-300 relative overflow-x-hidden">
+
+  <!-- SUBTLE BOTANICAL & SPARKLE AMBIENT BACKDROP -->
+  <div class="pointer-events-none fixed inset-0 overflow-hidden z-0 opacity-60 dark:opacity-35">
+    <svg class="absolute -top-6 -left-6 w-44 h-44 text-sage-500/20 dark:text-sage-400/15 animate-float" viewBox="0 0 200 200" fill="none">
+      <path d="M20 180C40 110 95 65 170 30C155 105 110 155 20 180Z" fill="currentColor"/>
+      <path d="M20 180C75 130 120 85 170 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M55 125C30 95 25 65 35 35C65 55 75 85 55 125Z" fill="currentColor" opacity="0.65"/>
+    </svg>
+    <svg class="absolute bottom-8 -right-8 w-52 h-52 text-caramel-500/15 dark:text-caramel-400/10 animate-float" viewBox="0 0 200 200" fill="none">
+      <path d="M180 20C110 40 65 95 30 170C105 155 155 110 180 20Z" fill="currentColor"/>
+      <path d="M180 20C130 75 85 120 30 170" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 ease-out pointer-events-none">
+    <div class="flex items-center gap-3 bg-stone-900 text-oat-50 dark:bg-oat-100 dark:text-stone-900 px-5 py-3.5 rounded-2xl shadow-xl border border-sage-500/30 text-xs sm:text-sm font-medium">
+      <i id="toast-icon" data-lucide="sparkles" class="w-4 h-4 text-sage-400 dark:text-sage-600"></i>
+      <span id="toast-message">Action completed</span>
+    </div>
+  </div>
+
+  <!-- TOP HEADER & BRAND -->
+  <header class="sticky top-0 z-40 w-full glass-nav bg-oat-100/85 dark:bg-espresso-900/85 border-b border-stone-200/80 dark:border-espresso-700/80">
+    <div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 py-3.5 flex items-center justify-between">
+      
+      <!-- Brand / Website Logo -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl overflow-hidden bg-white dark:bg-espresso-800 flex items-center justify-center border border-stone-200/90 dark:border-espresso-700 shadow-2xs transition group-hover:scale-105">
+          <img 
+            src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/missattycpa%20logo.png" 
+            alt="missattycpa logo" 
+            class="w-full h-full object-cover" 
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="w-full h-full hidden items-center justify-center font-serif font-bold text-sage-600 dark:text-sage-400 text-sm">
+            🌱
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-bold tracking-tight text-sm sm:text-base text-stone-900 dark:text-oat-50 leading-tight">Arianne May</span>
+            <span class="text-xs text-caramel-500 dark:text-caramel-400 animate-twinkle">✦</span>
+          </div>
+          <span class="text-[11px] font-mono text-stone-500 dark:text-stone-400">@missattycpa</span>
+        </div>
+      </a>
+
+      <!-- Desktop Page Navigator -->
+      <nav class="hidden lg:flex items-center p-1 rounded-2xl bg-oat-200/80 dark:bg-espresso-800/80 border border-stone-200/60 dark:border-espresso-700/60 text-xs font-semibold tracking-wide">
+        <a href="/" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">ABOUT</a>
+        <a href="/apps" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">APPS</a>
+        <a href="/shop" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">SHOP &amp; LINKS</a>
+        <a href="/career" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">CAREER</a>
+        <a href="/portfolio" aria-current="page" class="px-3.5 py-2 rounded-xl transition-all tab-active">PORTFOLIO</a>
+        <a href="/contact" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">CONTACT</a>
+      </nav>
+
+      <!-- Right controls: Dark mode & Mobile trigger -->
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-white/80 dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 hover:border-sage-500/50 text-stone-600 dark:text-stone-300 transition">
+          <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+          <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+        </button>
+
+        <button id="mobile-menu-btn" aria-label="Open Navigation" class="lg:hidden p-2.5 rounded-xl bg-white/80 dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 text-stone-700 dark:text-stone-300">
+          <i data-lucide="menu" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-stone-200 dark:border-espresso-700 bg-oat-100 dark:bg-espresso-900 px-6 py-4 space-y-1.5 text-sm font-semibold">
+      <a href="/" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">ABOUT</a>
+      <a href="/apps" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">APPS</a>
+      <a href="/shop" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">SHOP &amp; LINKS</a>
+      <a href="/career" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">CAREER</a>
+      <a href="/portfolio" aria-current="page" class="block w-full text-left py-2.5 px-3.5 rounded-xl bg-white dark:bg-espresso-800 text-stone-900 dark:text-oat-50">PORTFOLIO</a>
+      <a href="/contact" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">CONTACT</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="relative z-10 max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 py-8 flex-1">
+
+    <section id="view-portfolio" class="space-y-6">
+      
+      <div class="border-b border-stone-200/80 dark:border-espresso-700 pb-4">
+        <div class="inline-flex items-center gap-1.5 text-xs font-mono text-sage-600 dark:text-sage-400 mb-1">
+          <span>✨ Things I've Built &amp; Run</span>
+        </div>
+        <h1 class="text-2xl font-serif font-bold text-stone-900 dark:text-oat-50">Bots, Communities &amp; Web Projects</h1>
+        <p class="text-xs text-stone-500 font-mono mt-0.5">Independent builds created for productivity, exam prep, and community focus</p>
+      </div>
+
+      <!-- CATEGORY 1: DISCORD BOTS -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-sm">🤖</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Discord Bots</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Custom bots built for study sessions, exam countdowns &amp; server tools</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">2 bots</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 space-y-5 border-t border-stone-200/60 dark:border-espresso-700">
+          
+          <!-- Bot 1: PlantWithMe Discord Bot -->
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl overflow-hidden bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200/70 dark:border-emerald-800/60 flex items-center justify-center shrink-0 shadow-2xs">
+                  <img 
+                    src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/ForestSessionApp%20Icon.png" 
+                    alt="PlantWithMe Bot Icon" 
+                    class="w-full h-full object-cover" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <span class="hidden text-2xl">🌱</span>
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h3 class="text-lg font-bold text-stone-900 dark:text-oat-50">PlantWithMe Bot</h3>
+                    <span class="px-2.5 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400 text-[10px] font-mono font-semibold">Public Bot</span>
+                  </div>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 font-mono mt-0.5">Solo Creator &amp; Maintainer • Forest App Session Automation</p>
+                </div>
+              </div>
+              <a href="https://plantwithme.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition shadow-2xs shrink-0">
+                <span>Visit Bot Info Page</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+              A custom Discord bot built from scratch to host and track Forest App group planting sessions. Handles automatic room code sharing, countdown timers, session reminders, and personal focus logs so study servers can plant trees together seamlessly.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Discord.py</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Forest Room Sync</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Vercel Web Docs</span>
+            </div>
+          </div>
+
+          <!-- Bot 2: Study With Me Bot -->
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="h-14 px-3 rounded-2xl overflow-hidden bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center shrink-0 shadow-2xs">
+                  <img 
+                    src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/swm%20full%20logo%20with%20name.png" 
+                    alt="Study With Me Bot Logo" 
+                    class="h-9 w-auto object-contain" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <span class="hidden text-sm font-bold font-mono text-stone-700 dark:text-stone-200">SWM Bot</span>
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h3 class="text-lg font-bold text-stone-900 dark:text-oat-50">Study With Me Bot</h3>
+                    <span class="px-2.5 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 text-[10px] font-mono font-semibold">Server-Exclusive</span>
+                  </div>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 font-mono mt-0.5">Exam Countdown Visuals &amp; Mod Utility • Exclusive to StudyWithMe</p>
+                </div>
+              </div>
+              <a href="https://discord.gg/studywithme" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-stone-900 text-oat-50 dark:bg-oat-100 dark:text-stone-900 hover:opacity-90 text-xs font-semibold transition shrink-0">
+                <span>Use in Server</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+              An exclusive custom Discord bot built for the StudyWithMe server. Examinees can set their target exam date to generate and receive a custom countdown image showing their remaining days—either directly inside the server or via DM—while also supporting moderator DM utilities.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Exam Countdown Images</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Server &amp; DM Support</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Mod DM Tool</span>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- CATEGORY 2: WEB APPS & TRACKERS -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-amber-500/15 text-amber-600 dark:text-amber-400 flex items-center justify-center text-sm">💻</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Web Apps &amp; Trackers</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Custom review trackers and personal workflow tools</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">2 apps</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 space-y-5 border-t border-stone-200/60 dark:border-espresso-700">
+          
+          <!-- Web App 1: 2026 Bar Tracker -->
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl overflow-hidden bg-amber-50 dark:bg-amber-950/50 border border-amber-200/80 dark:border-amber-800/60 flex items-center justify-center p-2 shrink-0 shadow-2xs">
+                  <img 
+                    src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/LAWLOGO_FAVICON.png" 
+                    alt="2026 Bar Tracker Logo" 
+                    class="w-full h-full object-contain" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <span class="hidden text-2xl">⚖️</span>
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h3 class="text-lg font-bold text-stone-900 dark:text-oat-50">2026 Bar Tracker</h3>
+                    <span class="px-2.5 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400 text-[10px] font-mono font-semibold">Free Web App</span>
+                  </div>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 font-mono mt-0.5">Study Progress &amp; Syllabus Tracker for Bar Examinees</p>
+                </div>
+              </div>
+              <a href="https://2026bar-reviewtracker.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition shadow-2xs shrink-0">
+                <span>Open Tracker</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+              A free, dedicated review tracker created for all bar examinees to organize subjects, monitor reading milestones, and stay on top of exam prep progress.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-between gap-2 pt-1 text-xs font-mono">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Bar Review Prep</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Vercel Web App</span>
+              </div>
+
+              <button onclick="copyCode('2026', 'Bar Tracker password 2026 copied!')" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 hover:border-sage-500 text-stone-600 dark:text-stone-300 transition group" title="Hover to reveal or click to copy">
+                <span class="text-stone-400">Password:</span>
+                <span class="font-bold text-stone-900 dark:text-oat-50 blur-xs group-hover:blur-none transition duration-200 select-all">2026</span>
+                <i data-lucide="copy" class="w-3 h-3 text-stone-400"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Web App 2: Editor Workflow Timer -->
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl overflow-hidden bg-sky-50 dark:bg-sky-950/50 border border-sky-200/80 dark:border-sky-800/60 flex items-center justify-center p-2 shrink-0 shadow-2xs">
+                  <img 
+                    src="https://fdeditor-workflowtimer.vercel.app/favicons/hourglass.png" 
+                    alt="Editor Workflow Timer Logo" 
+                    class="w-full h-full object-contain" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <span class="hidden text-2xl">⏱️</span>
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h3 class="text-lg font-bold text-stone-900 dark:text-oat-50">Editor Workflow Timer</h3>
+                    <span class="px-2.5 py-0.5 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400 text-[10px] font-mono font-semibold">🔒 Private / Password-Protected</span>
+                  </div>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 font-mono mt-0.5">Personal Productivity &amp; Transcript Editing Suite</p>
+                </div>
+              </div>
+              <a href="https://fdeditor-workflowtimer.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-stone-900 text-oat-50 dark:bg-oat-100 dark:text-stone-900 hover:opacity-90 text-xs font-semibold transition shrink-0">
+                <span>View App</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+              A custom workspace built to help editors track and streamline daily workflows. Password-protected for personal work use, featuring a built-in timer, stopwatch, record logs, interactive dashboard, speaker logs, notepad, and quick links tab.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Timer &amp; Stopwatch</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Record &amp; Speaker Logs</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Interactive Dashboard</span>
+              <span class="px-2.5 py-1 rounded-lg bg-white dark:bg-espresso-800 text-stone-600 dark:text-stone-300 border border-stone-200/70 dark:border-espresso-700">Notepad &amp; Links</span>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- CATEGORY 3: COMMUNITY & PERSONAL HUB -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-sage-500/15 text-sage-600 dark:text-sage-400 flex items-center justify-center text-sm">🌿</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Community &amp; Personal Hub</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Discord study server leadership and open-source hub</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">2 spaces</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 space-y-5 border-t border-stone-200/60 dark:border-espresso-700">
+          
+          <!-- StudyWithMe Discord Community -->
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="h-14 px-3 rounded-2xl overflow-hidden bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center shrink-0">
+                  <img 
+                    src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/swm%20full%20logo%20with%20name.png" 
+                    alt="StudyWithMe Logo" 
+                    class="h-9 w-auto object-contain" 
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <span class="hidden text-sm font-bold font-mono text-stone-700 dark:text-stone-200">StudyWithMe</span>
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h3 class="text-lg font-bold text-stone-900 dark:text-oat-50">StudyWithMe Community</h3>
+                    <span class="px-2.5 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 text-[10px] font-mono font-semibold">Admin &amp; Moderator</span>
+                  </div>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 font-mono mt-0.5">discord.gg/studywithme</p>
+                </div>
+              </div>
+              <a href="https://discord.gg/studywithme" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-stone-900 text-oat-50 dark:bg-oat-100 dark:text-stone-900 hover:opacity-90 text-xs font-semibold transition shrink-0">
+                <span>Join Server</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+              Co-leading and moderating an active global study community where students, board examinees, and remote workers co-work in silent cam/screen-share rooms, track daily accountability goals, and join group Forest sessions.
+            </p>
+          </div>
+
+          <!-- Personal Hub & GitHub -->
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl overflow-hidden bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center shrink-0">
+                <img src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/missattycpa%20logo.png" alt="missattycpa" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <span class="hidden text-xl">🌐</span>
+              </div>
+              <div>
+                <h3 class="font-bold text-stone-900 dark:text-oat-50 text-base">missattycpa Personal Hub</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-0.5">All-in-one personal website &amp; open-source repos on GitHub.</p>
+              </div>
+            </div>
+            <a href="https://github.com/ariiannemay" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-stone-300 dark:border-espresso-700 hover:bg-oat-200/60 dark:hover:bg-espresso-700 text-xs font-semibold transition shrink-0">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>@ariiannemay</span>
+            </a>
+          </div>
+
+        </div>
+      </details>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 border-t border-stone-200/80 dark:border-espresso-700 py-6 bg-white/50 dark:bg-espresso-900/60 text-xs text-stone-500 dark:text-stone-400 font-mono">
+    <div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span class="flex items-center gap-1.5">
+        <span>🌱</span>
+        <span>Arianne May • @missattycpa</span>
+      </span>
+      <span>brewed with coffee ✦</span>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // TOAST SYSTEM
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const msg = document.getElementById('toast-message');
+      msg.innerText = message;
+
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3200);
+    }
+
+    // COPY CLIPBOARD
+    function copyCode(text, customMsg) {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      showToast(customMsg || `Copied ${text} to clipboard!`);
+    }
+
+    // MOBILE MENU
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // THEME SWITCHER (Persists across pages via localStorage)
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (localStorage.getItem('color-theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+      lucide.createIcons();
+    });
+
+    // INIT
+    window.onload = function() {
+      lucide.createIcons();
+    };
+  </script>
+</body>
+</html>
