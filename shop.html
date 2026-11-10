@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop &amp; Referral Links — Arianne May (@missattycpa)</title>
+  <meta name="description" content="Sign-up bonuses, remote work invites, study app referrals, and upcoming planners.">
+
+  <!-- Open Graph / Social Link Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ariiannemay.vercel.app/shop">
+  <meta property="og:title" content="Shop &amp; Referral Links — Arianne May (@missattycpa)">
+  <meta property="og:description" content="Sign-up bonuses, remote work invites, study app referrals, and upcoming planners.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/studywithme.JPG">
+
+  <!-- Twitter / X Link Preview Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ariiannemay.vercel.app/shop">
+  <meta name="twitter:title" content="Shop &amp; Referral Links — Arianne May (@missattycpa)">
+  <meta name="twitter:description" content="Sign-up bonuses, remote work invites, study app referrals, and upcoming planners.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/studywithme.JPG">
+
+  <!-- Browser Favicon / Chrome Tab Logo -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/missattycpa%20logo.png" onerror="this.onerror=null;this.href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>'">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Playfair Display & Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            oat: {
+              50: '#FDFBF7',
+              100: '#FAF7F2',
+              200: '#F2ECE1',
+            },
+            espresso: {
+              900: '#161412',
+              800: '#211E1B',
+              700: '#2E2925',
+            },
+            sage: {
+              400: '#8FB392',
+              500: '#5B7A5E',
+              600: '#47614A',
+            },
+            caramel: {
+              400: '#D4A373',
+              500: '#A47148',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(140, 130, 120, 0.28);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(140, 130, 120, 0.48);
+    }
+    .glass-nav {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .tab-active {
+      background-color: #ffffff;
+      color: #292524;
+      box-shadow: 0 2px 10px -2px rgba(91, 122, 94, 0.16);
+    }
+    .dark .tab-active {
+      background-color: #2E2925;
+      color: #FAF7F2;
+      box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.45);
+    }
+    .tab-inactive {
+      color: #78716c;
+    }
+    .tab-inactive:hover {
+      color: #292524;
+    }
+    .dark .tab-inactive {
+      color: #a8a29e;
+    }
+    .dark .tab-inactive:hover {
+      color: #FAF7F2;
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-4px) rotate(3deg); }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.45; transform: scale(0.92); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    .animate-float {
+      animation: floatSlow 4.5s ease-in-out infinite;
+    }
+    .animate-twinkle {
+      animation: twinkle 3.2s ease-in-out infinite;
+    }
+
+    /* Smooth chevron rotation for collapsible shop categories */
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] > summary .chevron-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-oat-100 text-stone-800 dark:bg-espresso-900 dark:text-stone-200 antialiased min-h-screen selection:bg-sage-400/30 flex flex-col justify-between transition-colors duration-300 relative overflow-x-hidden">
+
+  <!-- SUBTLE BOTANICAL & SPARKLE AMBIENT BACKDROP -->
+  <div class="pointer-events-none fixed inset-0 overflow-hidden z-0 opacity-60 dark:opacity-35">
+    <svg class="absolute -top-6 -left-6 w-44 h-44 text-sage-500/20 dark:text-sage-400/15 animate-float" viewBox="0 0 200 200" fill="none">
+      <path d="M20 180C40 110 95 65 170 30C155 105 110 155 20 180Z" fill="currentColor"/>
+      <path d="M20 180C75 130 120 85 170 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M55 125C30 95 25 65 35 35C65 55 75 85 55 125Z" fill="currentColor" opacity="0.65"/>
+    </svg>
+    <svg class="absolute bottom-8 -right-8 w-52 h-52 text-caramel-500/15 dark:text-caramel-400/10 animate-float" viewBox="0 0 200 200" fill="none">
+      <path d="M180 20C110 40 65 95 30 170C105 155 155 110 180 20Z" fill="currentColor"/>
+      <path d="M180 20C130 75 85 120 30 170" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 ease-out pointer-events-none">
+    <div class="flex items-center gap-3 bg-stone-900 text-oat-50 dark:bg-oat-100 dark:text-stone-900 px-5 py-3.5 rounded-2xl shadow-xl border border-sage-500/30 text-xs sm:text-sm font-medium">
+      <i id="toast-icon" data-lucide="sparkles" class="w-4 h-4 text-sage-400 dark:text-sage-600"></i>
+      <span id="toast-message">Action completed</span>
+    </div>
+  </div>
+
+  <!-- TOP HEADER & BRAND -->
+  <header class="sticky top-0 z-40 w-full glass-nav bg-oat-100/85 dark:bg-espresso-900/85 border-b border-stone-200/80 dark:border-espresso-700/80">
+    <div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 py-3.5 flex items-center justify-between">
+      
+      <!-- Brand / Website Logo -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl overflow-hidden bg-white dark:bg-espresso-800 flex items-center justify-center border border-stone-200/90 dark:border-espresso-700 shadow-2xs transition group-hover:scale-105">
+          <img 
+            src="https://raw.githubusercontent.com/ariiannemay/ariiannemay/main/Photos/missattycpa%20logo.png" 
+            alt="missattycpa logo" 
+            class="w-full h-full object-cover" 
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="w-full h-full hidden items-center justify-center font-serif font-bold text-sage-600 dark:text-sage-400 text-sm">
+            🌱
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-bold tracking-tight text-sm sm:text-base text-stone-900 dark:text-oat-50 leading-tight">Arianne May</span>
+            <span class="text-xs text-caramel-500 dark:text-caramel-400 animate-twinkle">✦</span>
+          </div>
+          <span class="text-[11px] font-mono text-stone-500 dark:text-stone-400">@missattycpa</span>
+        </div>
+      </a>
+
+      <!-- Desktop Page Navigator -->
+      <nav class="hidden lg:flex items-center p-1 rounded-2xl bg-oat-200/80 dark:bg-espresso-800/80 border border-stone-200/60 dark:border-espresso-700/60 text-xs font-semibold tracking-wide">
+        <a href="/" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">ABOUT</a>
+        <a href="/apps" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">APPS</a>
+        <a href="/shop" aria-current="page" class="px-3.5 py-2 rounded-xl transition-all tab-active">SHOP &amp; LINKS</a>
+        <a href="/career" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">CAREER</a>
+        <a href="/portfolio" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">PORTFOLIO</a>
+        <a href="/contact" class="px-3.5 py-2 rounded-xl transition-all tab-inactive">CONTACT</a>
+      </nav>
+
+      <!-- Right controls: Dark mode & Mobile trigger -->
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-white/80 dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 hover:border-sage-500/50 text-stone-600 dark:text-stone-300 transition">
+          <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+          <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+        </button>
+
+        <button id="mobile-menu-btn" aria-label="Open Navigation" class="lg:hidden p-2.5 rounded-xl bg-white/80 dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 text-stone-700 dark:text-stone-300">
+          <i data-lucide="menu" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-stone-200 dark:border-espresso-700 bg-oat-100 dark:bg-espresso-900 px-6 py-4 space-y-1.5 text-sm font-semibold">
+      <a href="/" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">ABOUT</a>
+      <a href="/apps" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">APPS</a>
+      <a href="/shop" aria-current="page" class="block w-full text-left py-2.5 px-3.5 rounded-xl bg-white dark:bg-espresso-800 text-stone-900 dark:text-oat-50">SHOP &amp; LINKS</a>
+      <a href="/career" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">CAREER</a>
+      <a href="/portfolio" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">PORTFOLIO</a>
+      <a href="/contact" class="block w-full text-left py-2.5 px-3.5 rounded-xl hover:bg-oat-200/70 dark:hover:bg-espresso-800">CONTACT</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="relative z-10 max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 py-8 flex-1">
+
+    <section id="view-shop" class="space-y-6">
+      
+      <div class="border-b border-stone-200/80 dark:border-espresso-700 pb-4">
+        <div class="inline-flex items-center gap-1.5 text-xs font-mono text-sage-600 dark:text-sage-400 mb-1">
+          <span>☕ Curated Perks &amp; Future Goods</span>
+        </div>
+        <h1 class="text-2xl font-serif font-bold text-stone-900 dark:text-oat-50">Shop &amp; Referral Links</h1>
+        <p class="text-xs text-stone-500 font-mono mt-0.5">Sign-up bonuses, remote work invites, and upcoming study templates</p>
+      </div>
+
+      <!-- CATEGORY 1: FINANCE & EVERYDAY PERKS -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-sage-500/15 text-sage-600 dark:text-sage-400 flex items-center justify-center text-sm">💳</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Finance &amp; Everyday Perks</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Cashback, banking promos &amp; delivery vouchers</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">4 perks</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-stone-200/60 dark:border-espresso-700">
+          
+          <!-- MariBank -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=maribank.ph&sz=128" alt="MariBank Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-orange-600">MB</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">MariBank</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400">Up to ₱588 Pamasko</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                Get up to ₱588 Pamasko by signing up with MariBank using referral code <strong class="font-semibold text-stone-800 dark:text-oat-50">AA368521</strong>. Download the MariBank app and make a deposit to your account! T&amp;Cs apply.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex flex-wrap items-center justify-between gap-2">
+              <button onclick="copyCode('AA368521', 'MariBank code AA368521 copied!')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200 dark:border-espresso-700 hover:bg-oat-200/60 dark:hover:bg-espresso-700 text-[11px] font-mono font-semibold text-stone-700 dark:text-stone-200 transition">
+                <span>Code: AA368521</span>
+                <i data-lucide="copy" class="w-3 h-3"></i>
+              </button>
+              <a href="https://www.maribank.ph/c/earnfreemoney?referralCode=AA368521" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Claim Bonus</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Wise -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=wise.com&sz=128" alt="Wise Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-lime-600">W</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">Wise</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400">Zero-Fee Transfer Perk</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                Fast, low-cost international money transfers and multi-currency accounts with real mid-market exchange rates—ideal for receiving remote payouts.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono text-stone-400">Invite Link</span>
+              <a href="https://wise.com/invite/ilpc/ariannemaybonillaa" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Sign Up via Wise</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Atome -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=atome.ph&sz=128" alt="Atome Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-yellow-600">AT</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">Atome Card</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400">Up to ₱8,100 Cashback</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                Win up to ₱8,100 cashback when you register for an Atome Card using my referral link. Enjoy flexible 0% interest split payments and everyday rewards.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono text-stone-400">Card Promo</span>
+              <a href="https://www.atome.ph/s/ke4biscO2" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Apply Now</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- foodpanda -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=foodpanda.ph&sz=128" alt="foodpanda Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-pink-600">FP</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">foodpanda</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400">Welcome Vouchers</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                Get welcome vouchers and discounts on your first food delivery or pandamart grocery order when signing up through my invite link.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono text-stone-400">New User Perk</span>
+              <a href="https://www.foodpanda.ph/referral?code=996415634ef3d5085172f45ce3dc8f23&geid=FP_PH&ts=1794209712" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Get Vouchers</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- CATEGORY 2: REMOTE WORK & AI OPPORTUNITIES -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-sm">💻</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Remote Work &amp; AI Opportunities</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Platforms where I work &amp; refer domain specialists</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">3 platforms</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-stone-200/60 dark:border-espresso-700">
+          
+          <!-- Mercor -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=mercor.com&sz=128" alt="Mercor Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-indigo-600">M</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">Mercor</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-300">AI &amp; Domain Roles</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                Connect with high-paying remote AI training, domain expertise, and workflow evaluation roles for frontier AI labs.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono text-stone-400">Referral</span>
+              <a href="https://t.mercor.com/CvMED" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Explore Roles</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Ethos -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=askethos.com&sz=128" alt="Ethos Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-sky-600">E</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">Ethos</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-600 dark:text-sky-300">Expert Network</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                On-demand platform matching domain specialists and experts to paid remote consulting, advisory, and AI evaluation projects.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono text-stone-400">Referral</span>
+              <a href="https://agent.askethos.com/refer/acomktojmueh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Join Ethos</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- OpenTrain AI -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=opentrain.ai&sz=128" alt="OpenTrain AI Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-emerald-600">OT</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">OpenTrain AI</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400">AI Training Projects</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                Apply for remote AI training, data annotation, and specialist evaluation projects through my referral job link.
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono text-stone-400">Job Referral</span>
+              <a href="https://app.opentrain.ai/job-detail/cmvh7dcj8002q07i56g1mkj32?ch=www_seo&tab=job_description" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>View Role</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- CATEGORY 3: STUDY & FOCUS APP INVITES -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm">🌲</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Study &amp; Focus App Invites</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Referral codes &amp; friend invites for daily study apps</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-600 dark:text-stone-300">1 invite</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-stone-200/60 dark:border-espresso-700">
+          <!-- Forest App Invite -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 flex flex-col justify-between gap-4 hover:border-sage-500/50 transition">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200/80 dark:border-espresso-700 flex items-center justify-center overflow-hidden shrink-0 p-1.5 shadow-2xs">
+                  <img src="https://www.google.com/s2/favicons?domain=forestapp.cc&sz=128" alt="Forest App Logo" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <span class="hidden w-full h-full items-center justify-center font-bold text-xs text-emerald-600">🌲</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-stone-900 dark:text-oat-50 text-sm">Forest App</h3>
+                  <span class="inline-block text-[10px] font-mono px-2 py-0.5 rounded-full bg-sage-500/15 text-sage-600 dark:text-sage-400">Bonus Coins &amp; Special Tree</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                New to Forest? Enter my invite code <strong class="font-semibold text-stone-800 dark:text-oat-50">OXYV5TC</strong> in the app's referral section to unlock bonus coins, or add <strong class="font-semibold text-stone-800 dark:text-oat-50">ariannemay737@gmail.com</strong> so we can plant trees together!
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200/70 dark:border-espresso-700 flex flex-wrap items-center justify-between gap-2">
+              <button onclick="copyCode('OXYV5TC', 'Forest invite code OXYV5TC copied!')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-espresso-800 border border-stone-200 dark:border-espresso-700 hover:bg-oat-200/60 dark:hover:bg-espresso-700 text-[11px] font-mono font-semibold text-stone-700 dark:text-stone-200 transition">
+                <span>Code: OXYV5TC</span>
+                <i data-lucide="copy" class="w-3 h-3"></i>
+              </button>
+              <button onclick="copyCode('ariannemay737@gmail.com', 'Forest friend email copied!')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sage-500 hover:bg-sage-600 text-white text-xs font-semibold transition">
+                <span>Copy Friend Email</span>
+                <i data-lucide="copy" class="w-3 h-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- CATEGORY 4: DIGITAL TRACKERS & PLANNERS -->
+      <details open class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 flex items-center justify-center text-sm">📒</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Digital Trackers &amp; Planners</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Custom GoodNotes &amp; Notion templates in the works</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-caramel-400/20 text-[11px] font-mono text-caramel-500 dark:text-caramel-400">Coming Soon</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-5 border-t border-stone-200/60 dark:border-espresso-700">
+          
+          <!-- Product 1 -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="inline-block px-2.5 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 text-[10px] font-mono font-semibold">COMING SOON</span>
+                <span class="text-xl">🌿</span>
+              </div>
+              <h3 class="font-bold text-stone-900 dark:text-oat-50 text-base">Aesthetic Deep Work &amp; Study Sprint Tracker</h3>
+              <p class="text-xs text-stone-500 dark:text-stone-400 leading-relaxed font-light">
+                Tailored for GoodNotes and iPad users. Includes weekly syllabus chunking, pomodoro logs, active recall reviews, and energy tracking.
+              </p>
+            </div>
+            <button onclick="showToast('You will be notified once the GoodNotes tracker launches!')" class="w-full py-2.5 rounded-xl border border-stone-300 dark:border-espresso-700 hover:bg-oat-200/70 dark:hover:bg-espresso-800 text-xs font-semibold text-stone-700 dark:text-stone-300 transition">
+              Notify Me When Live
+            </button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="p-5 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-stone-200/80 dark:border-espresso-700 space-y-4 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="inline-block px-2.5 py-0.5 rounded-full bg-caramel-400/20 text-caramel-500 dark:text-caramel-400 text-[10px] font-mono font-semibold">IN DEVELOPMENT</span>
+                <span class="text-xl">🗂️</span>
+              </div>
+              <h3 class="font-bold text-stone-900 dark:text-oat-50 text-base">Notion Life &amp; Workflow Command Hub</h3>
+              <p class="text-xs text-stone-500 dark:text-stone-400 leading-relaxed font-light">
+                Clean, unbloated Notion architecture organizing project milestones, daily focus habits, reading logs, and home workout trackers.
+              </p>
+            </div>
+            <button onclick="showToast('You will be notified once the Notion hub launches!')" class="w-full py-2.5 rounded-xl border border-stone-300 dark:border-espresso-700 hover:bg-oat-200/70 dark:hover:bg-espresso-800 text-xs font-semibold text-stone-700 dark:text-stone-300 transition">
+              Notify Me When Live
+            </button>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- CATEGORY 5: PRODUCT AFFILIATE LINKS (COMING SOON) -->
+      <details class="group rounded-3xl bg-white/90 dark:bg-espresso-800/80 border border-stone-200/80 dark:border-espresso-700 overflow-hidden shadow-2xs">
+        <summary class="cursor-pointer select-none px-6 py-4 flex items-center justify-between bg-oat-50/90 dark:bg-espresso-800 hover:bg-oat-200/50 dark:hover:bg-espresso-700/70 transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-xl bg-stone-200/80 dark:bg-espresso-700 text-stone-700 dark:text-stone-300 flex items-center justify-center text-sm">🛍️</span>
+            <div>
+              <h2 class="text-sm sm:text-base font-bold text-stone-900 dark:text-oat-50">Product Affiliate Links</h2>
+              <p class="text-[11px] font-mono text-stone-500 dark:text-stone-400">Desk setup gear, coffee bar essentials &amp; daily favorites</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-oat-200/80 dark:bg-espresso-700 text-[11px] font-mono text-stone-500 dark:text-stone-400">Coming Soon</span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-stone-500 transition-transform duration-200"></i>
+          </div>
+        </summary>
+
+        <div class="p-6 border-t border-stone-200/60 dark:border-espresso-700">
+          <div class="p-6 rounded-2xl bg-oat-100/80 dark:bg-espresso-900/75 border border-dashed border-stone-300 dark:border-espresso-700 text-center space-y-2">
+            <div class="text-2xl">☕🪴✨</div>
+            <h3 class="font-bold text-sm text-stone-900 dark:text-oat-50">Curated Gear &amp; Favorites Coming Soon</h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 max-w-md mx-auto leading-relaxed font-light">
+              Compiling direct affiliate links for my desk setup, iPad accessories, home workout equipment, and iced coffee essentials. Check back soon!
+            </p>
+          </div>
+        </div>
+      </details>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 border-t border-stone-200/80 dark:border-espresso-700 py-6 bg-white/50 dark:bg-espresso-900/60 text-xs text-stone-500 dark:text-stone-400 font-mono">
+    <div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span class="flex items-center gap-1.5">
+        <span>🌱</span>
+        <span>Arianne May • @missattycpa</span>
+      </span>
+      <span>brewed with coffee ✦</span>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // TOAST SYSTEM
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const msg = document.getElementById('toast-message');
+      msg.innerText = message;
+
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3200);
+    }
+
+    // COPY CLIPBOARD
+    function copyCode(text, customMsg) {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      showToast(customMsg || `Copied ${text} to clipboard!`);
+    }
+
+    // MOBILE MENU
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // THEME SWITCHER (Persists across pages via localStorage)
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (localStorage.getItem('color-theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+      lucide.createIcons();
+    });
+
+    // INIT
+    window.onload = function() {
+      lucide.createIcons();
+    };
+  </script>
+</body>
+</html>
